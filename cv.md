@@ -2,7 +2,7 @@
 
 Фото | Контакты для связи |
 --- | :--------------|
-![Текст с описанием картинки](https://dnepr-holm.ru/storage/app/media/uploaded-files/deer-07.png)| **Phone:** *+ 375259630478* **Diccord:** *Yahor Herasimchyk (@ForestDeerr)*  **Mail:** *QwertiQQQ@gmail.com*
+![Текст с описанием картинки](https://media.istockphoto.com/id/456584003/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%8F%D1%88%D0%BD%D1%8B%D0%B9-%D0%BE%D0%BB%D0%B5%D0%BD%D1%8C.jpg?s=612x612&w=is&k=20&c=Uhrbo7aaZGjp1zauE_jX_JH3wlyjuLDNPIXVR4lMWvM=)| **Phone:** *+ 375259630478* **Diccord:** *Yahor Herasimchyk (@ForestDeerr)*  **Mail:** *QwertiQQQ@gmail.com*
 
 **Краткая информация о себе:** цель - сменить род деятельности. Стараюсь всегда достигать поставленных целей не обращая внимания на трудности. Обладаяю пятнадцатилетним опытом рабты на промышленных предприятиях в должности руководителя проектов. Постоянно изучаю или учусь новому.
 
