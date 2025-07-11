@@ -5,11 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Hello RsSchool</h1>
+      <div class="logo">
+        <div class="logo-img"></div>
+        <div class="logo-title">
+          <h1>Gerasimchyk Egor</h1>
+          <h2>frontend developer</h2>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <div class="left">
+        <nav class="navigation-panel">
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Примеры кода</a></li>
+            <li><a href="#contact">Опыт работы</a></li>
+            <li><a href="#contact">Образование</a></li>
+            <li><a href="#contact">Языки</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <div class="contact-container contact-container--first">
+          <div class="title-blok">
+            <p>Contact me</p>
+          </div>
+          <div class="contact-item">
+            <div class="img">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 32C167 32 96 103 96 192c0 108 128 256 160 288 32-32 160-180 160-288 0-89-71-160-160-160z"
+                  fill="#e68f44"
+                />
+                <circle cx="256" cy="192" r="64" fill="white" />
+              </svg>
+            </div>
+            <div class="text">
+              <p>ADDRESS</p>
+              <p>rose luximbourg</p>
+              <p>BLR Minsk</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="img">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 32C167 32 96 103 96 192c0 108 128 256 160 288 32-32 160-180 160-288 0-89-71-160-160-160z"
+                  fill="#e68f44"
+                />
+                <circle cx="256" cy="192" r="64" fill="white" />
+              </svg>
+            </div>
+            <div class="text">
+              <p>WEB</p>
+              <p>QwertiQQQ</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="img">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 32C167 32 96 103 96 192c0 108 128 256 160 288 32-32 160-180 160-288 0-89-71-160-160-160z"
+                  fill="#e68f44"
+                />
+                <circle cx="256" cy="192" r="64" fill="white" />
+              </svg>
+            </div>
+            <div class="text">
+              <p>TELEPHONE</p>
+              <p>+375(25)963-04-78</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-container">
+          <div class="title-blok">
+            <p>Pro Skills</p>
+          </div>
+
+          <div class="skills-item">
+            <div class="text">
+              <p>java script</p>
+            </div>
+            <div class="progress-bar">
+              <div class="progress progress--80"></div>
+            </div>
+          </div>
+
+          <div class="skills-item">
+            <div class="text">
+              <p>type script</p>
+            </div>
+            <div class="progress-bar">
+              <div class="progress progress--50"></div>
+            </div>
+          </div>
+
+          <div class="skills-item">
+            <div class="text">
+              <p>html\css</p>
+            </div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+
+          <div class="skills-item">
+            <div class="text">
+              <p>react</p>
+            </div>
+            <div class="progress-bar">
+              <div class="progress progress--20"></div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-icon">
+              <a href="https://github.com/ForestDeerr" target="_blank">
+                <svg
+                  height="50"
+                  width="50"
+                  viewBox="0 0 24 24"
+                  version="1.1"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="footer-icon">
+              <a href="https://rs.school/" target="_blank">
+                <img
+                  class="rss-logo"
+                  src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"
+                  alt="RS School"
+                />
+              </a>
+            </div>
+          </div>
+
+          <p class="text-footer">
+            © <time datetime="2025">2025</time> Все права защищены.
+          </p>
+        </footer>
+      </div>
+    </main>
+
+    <!-- 
     <main></main>
 
     <footer>
@@ -36,6 +208,6 @@
       </a>
 
       <p>© <time datetime="2025">2025</time> Все права защищены.</p>
-    </footer>
+    </footer> -->
   </body>
 </html>
