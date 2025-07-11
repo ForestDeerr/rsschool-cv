@@ -110,6 +110,12 @@ footer {
   gap: 10px;
 }
 
+.main-container-end {
+  background-color: #e68f44;
+  height: 30px;
+  width: 100%;
+}
+
 .main-container-content a {
   color: #111ceb;
   text-decoration: none;
