@@ -100,23 +100,34 @@ footer {
 }
 
 .main-container-content {
-    padding: 0 15px;
-    width: 90%;
+  padding: 0 15px;
+  width: 90%;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-container-content a {
+  color: #111ceb;
+  text-decoration: none;
 }
 
 .main-container-content-cod {
-    background-color: #eee;
-    width: 90%;
+  background-color: #eee;
+  width: 90%;
 }
 
 .main-container-content-cod pre {
-    margin: 0;
-    white-space: pre;
-  }
-  
-  .main-container-content-cod code {
-    display: block;
-  }
+  margin: 0;
+  white-space: pre;
+}
+
+.main-container-content-cod code {
+  display: block;
+}
 
 .right {
   background-color: #2e2e2e;
