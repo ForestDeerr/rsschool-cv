@@ -318,3 +318,30 @@ footer {
   gap: 10px;
   flex-direction: column;
 }
+
+.education-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-title {
+    width: 100%;
+    max-width: 130px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 2px solid #e68f44;
+}
+
+.full {
+  background-color: #e68f44;
+}
