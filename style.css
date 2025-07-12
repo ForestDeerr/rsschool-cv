@@ -70,6 +70,12 @@ footer {
   padding: 5px;
 }
 
+.footer-img{
+    position: relative;
+    right: 15px;
+    bottom: 30px;
+}
+
 .left {
   display: flex;
   background-color: #ffffff;
@@ -261,7 +267,7 @@ footer {
 .logo-img {
   width: 175px;
   height: 175px;
-  border: 12px solid #000000;
+  border: 12px solid #2e2e2e;
   border-radius: 100px;
   position: relative;
   left: 50px;
