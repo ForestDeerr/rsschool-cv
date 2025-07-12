@@ -1,6 +1,5 @@
 h1,
 h2 {
-    
   margin: 0;
 }
 
@@ -280,50 +279,42 @@ footer {
   height: 50px;
 }
 
-
-.rgb:hover{
-    background: repeating-linear-gradient(
-      90deg,
-      red 0 10px,
-      orange 10px 20px,
-      yellow 20px 30px,
-      green 30px 40px,
-      blue 40px 50px,
-      indigo 50px 60px,
-      violet 60px 70px
-    );
-    background-size: 200% 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: pixel-rainbow 15s linear infinite;
+.rgb:hover {
+  background: repeating-linear-gradient(
+    90deg,
+    red 0 10px,
+    orange 10px 20px,
+    yellow 20px 30px,
+    green 30px 40px,
+    blue 40px 50px,
+    indigo 50px 60px,
+    violet 60px 70px
+  );
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: pixel-rainbow 15s linear infinite;
 }
 
-.pixel-rainbow-text {
-    font-size: 2rem;
-    font-weight: bold;
-    background: repeating-linear-gradient(
-      90deg,
-      red 0 10px,
-      orange 10px 20px,
-      yellow 20px 30px,
-      green 30px 40px,
-      blue 40px 50px,
-      indigo 50px 60px,
-      violet 60px 70px
-    );
-    background-size: 200% 100%;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: pixel-rainbow 15s linear infinite;
+@keyframes pixel-rainbow {
+  0% {
+    background-position: 0% 0%;
   }
-  
-  @keyframes pixel-rainbow {
-    0% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 100% 0%;
-    }
+  100% {
+    background-position: 100% 0%;
   }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills-list {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  flex-direction: column;
+}
