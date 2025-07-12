@@ -70,10 +70,10 @@ footer {
   padding: 5px;
 }
 
-.footer-img{
-    position: relative;
-    right: 15px;
-    bottom: 30px;
+.footer-img {
+  position: relative;
+  right: 15px;
+  bottom: 30px;
 }
 
 .left {
@@ -213,6 +213,10 @@ footer {
   width: 80%;
 }
 
+.progress--90 {
+    width: 90%;
+  }
+
 .navigation-panel {
   display: flex;
   margin-top: 250px;
@@ -332,8 +336,8 @@ footer {
 }
 
 .education-title {
-    width: 100%;
-    max-width: 130px;
+  width: 100%;
+  max-width: 130px;
 }
 
 .stars {
@@ -350,4 +354,10 @@ footer {
 
 .full {
   background-color: #e68f44;
+}
+
+.main-container-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
