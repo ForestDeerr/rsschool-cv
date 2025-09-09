@@ -361,3 +361,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+ .sr-only{
+  overflow: hidden;
+ }
