@@ -1,12 +1,5 @@
-import { createButton } from "./components/create-button.js";
+import { createLangBtn } from "./components/language-button/language-button.js";
 
 document.body.replaceChildren();
 
-document.body.appendChild(
-  createButton({
-    text: "Lang",
-    className: "btn",
-    //   onClick: () => {
-    //   },
-  }),
-);
+createLangBtn();
