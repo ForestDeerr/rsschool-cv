@@ -1,16 +1,23 @@
+import { createHeader } from "./components/header/header.js";
 import { createLangBtn } from "./components/language-button/language-button.js";
-import { titles } from "./language.js";
+import { langEn } from "./language-en.js";
+import { langRu } from "./language-ru.js";
 
 function startApp() {
   let currentLang = localStorage.getItem("lang");
 
   if (!currentLang) {
-    localStorage.setItem("lang", "ru");
-    currentLang = localStorage.getItem("lang");
+    currentLang = "ru";
+    localStorage.setItem("lang", currentLang);
   }
 
+  let lang = currentLang === "ru" ? langRu : langEn;
+
   document.body.replaceChildren();
-  document.title = titles[currentLang];
+  document.title = lang.pageTitle;
+
+  document.body.appendChild(createHeader(lang));
+
   createLangBtn();
 }
 
