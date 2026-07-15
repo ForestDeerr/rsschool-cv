@@ -1,5 +1,12 @@
 import { createLangBtn } from "./components/language-button/language-button.js";
 
-document.body.replaceChildren();
+function startApp() {
+  if (!localStorage.getItem("lang")) {
+    localStorage.setItem("lang", "ru");
+  }
 
-createLangBtn();
+  document.body.replaceChildren();
+  createLangBtn();
+}
+
+startApp();
