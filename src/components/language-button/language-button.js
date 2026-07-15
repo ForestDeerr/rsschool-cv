@@ -4,15 +4,16 @@ import { loadStyle } from "../load-style.js";
 function createLangBtn() {
   loadStyle("./src/components/language-button/styles.css");
 
-  let currentLang = "ru";
+  let currentLang = localStorage.getItem("lang") ?? "ru";
 
   const button = createButton({
-    className: "lang-btn ru",
+    className: `lang-btn ${currentLang}`,
     onClick: () => {
       currentLang = currentLang === "ru" ? "en" : "ru";
 
-      button.classList.toggle("ru");
-      button.classList.toggle("en");
+      localStorage.setItem("lang", currentLang);
+
+      button.className = `lang-btn ${currentLang}`;
     },
   });
 
