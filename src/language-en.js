@@ -23,6 +23,24 @@ const langEn = {
       "Belarusian National Technical University — Master's Degree in Quality Management",
     ],
   },
+
+  language: {
+    title: "Languages",
+    items: [
+      {
+        name: "Belarusian",
+        level: 3,
+      },
+      {
+        name: "Russian",
+        level: 4,
+      },
+      {
+        name: "English",
+        level: 2,
+      },
+    ],
+  },
 };
 
 export { langEn };
