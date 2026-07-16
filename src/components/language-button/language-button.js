@@ -24,7 +24,7 @@ function createLangBtn() {
     },
   });
 
-  document.body.append(button);
+  return button;
 }
 
 export { createLangBtn };

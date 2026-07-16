@@ -255,6 +255,7 @@ footer {
   flex-direction: column;
 }
 .logo {
+  position: relative;
   display: flex;
   align-items: center;
   background: linear-gradient(to right, #ffffff 65%, #2e2e2e 35%);
@@ -357,4 +358,11 @@ footer {
 
 .sr-only {
   overflow: hidden;
+}
+
+.setting {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
 }

@@ -1,5 +1,4 @@
 import { createHeader } from "./components/header/header.js";
-import { createLangBtn } from "./components/language-button/language-button.js";
 import { createFooter } from "./components/main-content/footer.js";
 import { createMain } from "./components/main-content/main-content.js";
 import { langEn } from "./language-en.js";
@@ -23,8 +22,6 @@ function startApp() {
     createMain(lang),
     createFooter(lang),
   );
-
-  createLangBtn();
 }
 
 startApp();

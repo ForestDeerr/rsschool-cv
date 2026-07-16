@@ -1,3 +1,4 @@
+import { createLangBtn } from "../language-button/language-button.js";
 import { createNavigation } from "../main-content/navigation-panel.js";
 
 function createHeader(lang) {
@@ -27,9 +28,13 @@ function createHeader(lang) {
   h2.className = "rgb";
   h2.textContent = lang.headerPosition;
 
+  const setting = document.createElement("div");
+  setting.className = "setting";
+  setting.append(createLangBtn());
+
   logoImg.append(img);
   logoTitle.append(h1, h2);
-  logo.append(logoImg, logoTitle);
+  logo.append(logoImg, logoTitle, setting);
   header.append(createNavigation(lang), logo);
 
   return header;
