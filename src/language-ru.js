@@ -63,6 +63,28 @@ const langRu = {
       },
     ],
   },
+
+  proSkills: {
+    title: "Профессиональные навыки",
+    items: [
+      {
+        name: "JavaScript",
+        level: 80,
+      },
+      {
+        name: "TypeScript",
+        level: 50,
+      },
+      {
+        name: "HTML / CSS",
+        level: 90,
+      },
+      {
+        name: "React",
+        level: 20,
+      },
+    ],
+  },
 };
 
 export { langRu };
