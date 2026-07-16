@@ -41,6 +41,28 @@ const langRu = {
       },
     ],
   },
+
+  contacts: {
+    title: "Мои контакты",
+    items: [
+      {
+        type: "discord",
+        label: "Discord",
+        value: "Yahor Herasimchyk",
+        extra: "@ForestDeerr",
+      },
+      {
+        type: "mail",
+        label: "Почта",
+        value: "qwerti@gmail.com",
+      },
+      {
+        type: "phone",
+        label: "Телефон",
+        value: "+375 (25) 963-04-78",
+      },
+    ],
+  },
 };
 
 export { langRu };

@@ -41,6 +41,28 @@ const langEn = {
       },
     ],
   },
+
+  contacts: {
+    title: "Contact me",
+    items: [
+      {
+        type: "discord",
+        label: "Discord",
+        value: "Yahor Herasimchyk",
+        extra: "@ForestDeerr",
+      },
+      {
+        type: "mail",
+        label: "Mail",
+        value: "qwerti@gmail.com",
+      },
+      {
+        type: "phone",
+        label: "Phone",
+        value: "+375 (25) 963-04-78",
+      },
+    ],
+  },
 };
 
 export { langEn };
