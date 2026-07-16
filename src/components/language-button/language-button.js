@@ -1,6 +1,6 @@
 import { startApp } from "../../main.js";
-import { createButton } from "../create-button.js";
-import { loadStyle } from "../load-style.js";
+import { createButton } from "../utils/create-button.js";
+import { loadStyle } from "../utils/load-style.js";
 
 function getNextLang(lang) {
   return lang === "ru" ? "en" : "ru";
