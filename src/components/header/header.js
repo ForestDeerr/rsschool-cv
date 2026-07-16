@@ -1,3 +1,5 @@
+import { createNavigation } from "../main-content/navigation-panel.js";
+
 function createHeader(lang) {
   const header = document.createElement("header");
 
@@ -28,7 +30,7 @@ function createHeader(lang) {
   logoImg.append(img);
   logoTitle.append(h1, h2);
   logo.append(logoImg, logoTitle);
-  header.append(logo);
+  header.append(createNavigation(lang), logo);
 
   return header;
 }
