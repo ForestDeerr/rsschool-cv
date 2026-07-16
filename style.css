@@ -16,26 +16,24 @@ li {
   list-style: none;
 }
 
+html,
 body {
-  display: flex;
-  justify-content: center;
-  background: #eee;
-  flex-direction: column;
-  align-items: center;
+  margin: 0;
   font-family: "Press Start 2P", cursive;
   font-size: 12px;
 }
 
-header {
-  position: absolute;
+body {
   display: flex;
-  width: 100%;
-  height: 200px;
-  max-width: 800px;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
-  color: #ffffff;
-  top: 50px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
 }
 
 main {
@@ -214,12 +212,12 @@ footer {
 }
 
 .progress--90 {
-    width: 90%;
-  }
+  width: 90%;
+}
 
 .navigation-panel {
   display: flex;
-  margin-top: 250px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -280,7 +278,7 @@ footer {
 
 .logo-title {
   padding: 15px 0px 15px 110px;
-  width: 500px;
+  width: 100%;
   background-color: #e68f44;
 }
 
@@ -362,6 +360,6 @@ footer {
   justify-content: center;
 }
 
- .sr-only{
+.sr-only {
   overflow: hidden;
- }
+}
