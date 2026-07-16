@@ -1,10 +1,10 @@
-import { createNavigation } from "./navigation-panel.js";
+import { createAboutSection } from "./about-section.js";
 
 function createLeftBlock(lang) {
   const leftBlock = document.createElement("div");
   leftBlock.className = "left";
 
-  leftBlock.append(createNavigation(lang));
+  leftBlock.append(createAboutSection(lang));
 
   return leftBlock;
 }

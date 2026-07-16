@@ -8,6 +8,10 @@ const langEn = {
   navCourses: "Courses",
   navEducation: "Education",
   navLanguages: "Languages",
+
+  aboutTitle: "About Me",
+  aboutText:
+    "My objective is to transition into a new professional field. I am results-oriented and consistently pursue goals despite challenges. I bring over 15 years of experience in industrial enterprises as a project manager. Committed to continuous learning and professional development.",
 };
 
 export { langEn };
