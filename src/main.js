@@ -1,5 +1,6 @@
 import { createHeader } from "./components/header/header.js";
 import { createLangBtn } from "./components/language-button/language-button.js";
+import { createMain } from "./components/main-content/main-content.js";
 import { langEn } from "./language-en.js";
 import { langRu } from "./language-ru.js";
 
@@ -16,7 +17,7 @@ function startApp() {
   document.body.replaceChildren();
   document.title = lang.pageTitle;
 
-  document.body.appendChild(createHeader(lang));
+  document.body.append(createHeader(lang), createMain(lang));
 
   createLangBtn();
 }
