@@ -25,4 +25,21 @@ function getNavigationLinks(lang) {
   return navigationLinks;
 }
 
-export { getNavigationLinks };
+const courses = [
+  {
+    name: "HTML Academy",
+    url: "https://htmlacademy.ru/",
+    course: '"JavaScript Developer Program #14"',
+    description: "with coursework in:",
+    skills: ["JavaScript", "TypeScript", "React"],
+  },
+  {
+    name: "RS School",
+    url: "https://rs.school/",
+    course: '"JS/Front-end Course 2024"',
+    description: "with coursework in:",
+    skills: ["HTML/CSS", "JavaScript", "TypeScript"],
+  },
+];
+
+export { getNavigationLinks, courses };
