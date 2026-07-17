@@ -408,3 +408,57 @@ footer {
   gap: 10px;
   margin: 5px;
 }
+
+.code-editor {
+  width: 90%;
+  overflow: hidden;
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-left: 20px;
+}
+
+.code-editor-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 12px;
+  background: #2d2d2d;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.code-editor-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.code-block {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.code-line {
+  display: flex;
+}
+
+.code-line:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.code-line-number {
+  width: 45px;
+  text-align: right;
+  padding-right: 15px;
+  color: #858585;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.code-line-content {
+  white-space: pre;
+  color: #d4d4d4;
+}
