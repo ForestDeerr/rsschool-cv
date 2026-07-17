@@ -3,6 +3,9 @@
   --bg-left: #ffffff;
   --bg-right: #2d3139;
 
+  --bg-lang-btn: #f3f5f7;
+  --bc-lang-btn: #2d3139;
+
   --bg-navigation-panel-btn: #ffffff;
   --text-navigation-panel-btn: #24292f;
 
@@ -29,6 +32,9 @@
   --bg: #090d15;
   --bg-left: #141a23;
   --bg-right: #1b2029;
+
+  --bg-lang-btn: #090d15;
+  --bc-lang-btn: #e68f44;
 
   --bg-navigation-panel-btn: #202734;
   --text-navigation-panel-btn: #ffffff;
@@ -72,6 +78,7 @@ li {
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   font-family: "Press Start 2P", cursive;
   font-size: 12px;
@@ -204,6 +211,7 @@ footer {
   width: 35%;
   flex-direction: column;
   justify-content: flex-start;
+  border-radius: 0 10px 0 0;
 }
 
 .contact-container {
@@ -321,6 +329,7 @@ footer {
   align-items: center;
   background: var(--bg-left);
   padding-bottom: 20px;
+  border-radius: 10px 0 0 0;
 }
 
 .logo-img {
