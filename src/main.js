@@ -6,10 +6,18 @@ import { langRu } from "./language-ru.js";
 
 function startApp() {
   let currentLang = localStorage.getItem("lang");
+  let currentThem = localStorage.getItem("them");
 
   if (!currentLang) {
     currentLang = "ru";
     localStorage.setItem("lang", currentLang);
+  }
+
+  if (!currentThem) {
+    currentThem = "light";
+    localStorage.setItem("them", currentThem);
+  } else {
+    document.documentElement.dataset.theme = currentThem;
   }
 
   let lang = currentLang === "ru" ? langRu : langEn;
