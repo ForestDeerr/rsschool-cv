@@ -59,3 +59,7 @@
 .dark {
   background-image: url("../language-button/images/dark.png");
 }
+
+.infoPng {
+  background-image: url("../language-button/images/info.png");
+}
