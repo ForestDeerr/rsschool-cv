@@ -16,8 +16,9 @@ function startApp() {
   }
 
   if (!currentThem) {
-    currentThem = "light";
+    currentThem = "dark";
     localStorage.setItem("them", currentThem);
+    document.documentElement.dataset.theme = currentThem;
   } else {
     document.documentElement.dataset.theme = currentThem;
   }
