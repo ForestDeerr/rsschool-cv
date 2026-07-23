@@ -26,6 +26,10 @@
   --editor-border: #d0d7de;
   --editor-text: #24292f;
   --editor-line: #8c959f;
+
+  --scroll-track: #ffffff;
+  --scroll-thumb: #f3a85d;
+  --scroll-thumb-hover: #ffb15c;
 }
 
 [data-theme="dark"] {
@@ -56,6 +60,10 @@
   --editor-border: #3c3c3c;
   --editor-text: #d4d4d4;
   --editor-line: #858585;
+
+  --scroll-track: #141a23;
+  --scroll-thumb: #f3a85d;
+  --scroll-thumb-hover: #ffb15c;
 }
 
 h1,
@@ -491,4 +499,20 @@ footer {
 .code-line-content {
   white-space: pre;
   color: var(--editor-text);
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover);
 }

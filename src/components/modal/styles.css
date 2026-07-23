@@ -15,7 +15,7 @@
 
 .modal {
   width: min(700px, 90vw);
-  background: var(--bg-left);
+  background: var(--bg);
   color: var(--text-primary);
   border: 3px solid var(--accent);
   border-radius: 10px;
