@@ -1,6 +1,6 @@
 const modalContentRU = {
   title: "О проекте",
-
+  checkbox: "Не показывать это окно при запуске",
   content: `
 <div class="modal-section">
   <h3>📄 Frontend Resume</h3>

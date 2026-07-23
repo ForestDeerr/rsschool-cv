@@ -1,12 +1,14 @@
 import { createHeader } from "./components/header/header.js";
 import { createFooter } from "./components/main-content/footer.js";
 import { createMain } from "./components/main-content/main-content.js";
+import { createModal } from "./components/modal/create-modal.js";
 import { langEn } from "./language-en.js";
 import { langRu } from "./language-ru.js";
 
 function startApp() {
   let currentLang = localStorage.getItem("lang");
   let currentThem = localStorage.getItem("them");
+  let hideWelcomeModal = localStorage.getItem("hideWelcomeModal");
 
   if (!currentLang) {
     currentLang = "ru";
@@ -30,6 +32,16 @@ function startApp() {
     createMain(lang),
     createFooter(lang),
   );
+
+  if (hideWelcomeModal !== "true") {
+    createModal(
+      {
+        title: lang.modalContent.title,
+        content: lang.modalContent.content,
+      },
+      lang,
+    );
+  }
 }
 
 startApp();

@@ -6,10 +6,13 @@ function createModalBtn(lang) {
   const button = createButton({
     className: `lang-btn infoPng`,
     onClick: () => {
-      createModal({
-        title: lang.modalContent.title,
-        content: lang.modalContent.content,
-      });
+      createModal(
+        {
+          title: lang.modalContent.title,
+          content: lang.modalContent.content,
+        },
+        lang,
+      );
     },
   });
 

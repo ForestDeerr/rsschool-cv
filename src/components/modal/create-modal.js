@@ -1,9 +1,10 @@
 import { createButton } from "../utils/create-button.js";
 import { loadStyle } from "../utils/load-style.js";
+import { createModalCheckbox } from "./modal-checkbox.js";
 
 loadStyle("./src/components/modal/styles.css");
 
-function createModal({ title = "", content, closeOnOverlay = true }) {
+function createModal({ title = "", content, closeOnOverlay = true }, lang) {
   const overlay = document.createElement("div");
   overlay.className = "modal-overlay";
 
@@ -31,7 +32,7 @@ function createModal({ title = "", content, closeOnOverlay = true }) {
   }
 
   header.append(titleElement, closeButton);
-  modal.append(header, body);
+  modal.append(header, body, createModalCheckbox(lang));
   overlay.append(modal);
 
   function close() {

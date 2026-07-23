@@ -1,6 +1,6 @@
 const modalContentEN = {
   title: "About Project",
-
+  checkbox: "Don't show this window on startup",
   content: `
 <div class="modal-section">
   <h3>📄 Frontend Resume</h3>
