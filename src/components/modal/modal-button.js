@@ -2,16 +2,13 @@ import { createButton } from "../utils/create-button.js";
 import { createAboutContent } from "./create-about-content.js";
 import { createModal } from "./create-modal.js";
 
-const title = "About project";
-const content = createAboutContent();
-
-function createModalBtn() {
+function createModalBtn(lang) {
   const button = createButton({
     className: `lang-btn infoPng`,
     onClick: () => {
       createModal({
-        title: `${title}`,
-        content: createAboutContent(),
+        title: lang.modalContent.title,
+        content: lang.modalContent.content,
       });
     },
   });

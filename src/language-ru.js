@@ -1,3 +1,5 @@
+import { modalContentRU } from "./components/modal/about-content-ru.js";
+
 const langRu = {
   pageTitle: "Егор Герасимчик | Frontend разработчик",
   headerName: "Герасимчик Егор",
@@ -85,6 +87,8 @@ const langRu = {
       },
     ],
   },
+
+  modalContent: modalContentRU,
 };
 
 export { langRu };

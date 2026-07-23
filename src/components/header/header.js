@@ -9,7 +9,7 @@ function createHeader(lang) {
   const setting = document.createElement("div");
 
   setting.className = "setting";
-  setting.append(createLangBtn(), createThemBtn(), createModalBtn());
+  setting.append(createLangBtn(), createThemBtn(), createModalBtn(lang));
 
   header.append(createNavigation(lang), setting);
 

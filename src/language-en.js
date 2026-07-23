@@ -1,3 +1,5 @@
+import { modalContentEN } from "./components/modal/about-content-en.js";
+
 const langEn = {
   pageTitle: "Egor Gerasimchik | Frontend Developer",
   headerName: "Gerasimchik Egor",
@@ -85,6 +87,8 @@ const langEn = {
       },
     ],
   },
+
+  modalContent: modalContentEN,
 };
 
 export { langEn };

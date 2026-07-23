@@ -1,4 +1,4 @@
-function createAboutContent() {
+function createAboutContent(content) {
   const container = document.createElement("div");
 
   const p1 = document.createElement("p");

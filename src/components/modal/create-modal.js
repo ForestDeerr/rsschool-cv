@@ -27,7 +27,7 @@ function createModal({ title = "", content, closeOnOverlay = true }) {
   if (content instanceof HTMLElement) {
     body.append(content);
   } else {
-    body.textContent = content;
+    body.innerHTML = content;
   }
 
   header.append(titleElement, closeButton);
