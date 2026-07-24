@@ -49,21 +49,6 @@ const modalContentEN = {
 </div>
 
 <div class="modal-section">
-  <h3>📊 Project Stats</h3>
-
-<pre>
-Developer : Yegor Gerasimchik
-Language  : JavaScript
-Architecture : Component Based
-Themes    : 2
-Languages : EN / RU
-Framework : None
-Storage   : LocalStorage
-</pre>
-
-</div>
-
-<div class="modal-section">
   <h3>💡 Summary</h3>
 
   <p>

@@ -50,21 +50,6 @@ const modalContentRU = {
 </div>
 
 <div class="modal-section">
-  <h3>📊 Статистика проекта</h3>
-
-<pre>
-Developer : Yegor Gerasimchik
-Language  : JavaScript
-Architecture : Component Based
-Themes    : 2
-Languages : RU / EN
-Framework : None
-Storage   : LocalStorage
-</pre>
-
-</div>
-
-<div class="modal-section">
   <h3>💡 Идея</h3>
 
   <p>
