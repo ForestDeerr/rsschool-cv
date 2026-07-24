@@ -302,13 +302,16 @@ footer {
 
 .navigation-panel li {
   height: 25px;
-  border: 2px solid #e68f44;
-  background-color: var(--bg-navigation-panel-btn);
+  border: 8px solid transparent;
+  border-image: url("./src/components/language-button/images/border.png") 8 fill;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  transition:
+    transform 0.15s steps(2),
+    filter 0.15s;
 }
 
 .navigation-panel a {
@@ -320,11 +323,8 @@ footer {
 }
 
 .navigation-panel li:hover {
-  background-color: #e68f44;
-}
-
-.navigation-panel li:hover a {
-  color: #2e2e2e;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px var(--accent));
 }
 
 .text {
