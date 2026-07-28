@@ -1,0 +1,35 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  margin: 30px 15px;
+}
+
+.slider-window {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.35s steps(12);
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.slider-btn {
+  width: 25px;
+  height: 25px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-around;
+}
