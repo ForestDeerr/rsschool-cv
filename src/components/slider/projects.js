@@ -21,7 +21,7 @@ const projects = [
     demo: "...",
   },
   {
-    title: "Nonograms",
+    title: "Water",
     image: "./src/components/slider/assets/image3.png",
     description: "Game • TypeScript",
     github: "...",

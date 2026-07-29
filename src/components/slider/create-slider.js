@@ -18,6 +18,7 @@ function createSlider() {
       moveLastSlideToFront(slideWidth);
       currentSlide = currentSlide - 1;
       track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      updateSliderTitle();
     },
   });
   prevButton.setAttribute("aria-label", "Previous slide");
@@ -29,6 +30,7 @@ function createSlider() {
       nextButton.disabled = true;
       currentSlide = currentSlide + 1;
       track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      updateSliderTitle();
     },
   });
   nextButton.setAttribute("aria-label", "Next slide");
@@ -39,22 +41,35 @@ function createSlider() {
   const track = document.createElement("div");
   track.className = "slider-track";
 
-  projects.forEach((project) => {
-    const image = document.createElement("img");
-    image.className = "slide-image";
-    image.src = project.image;
-    image.alt = project.title;
-    track.append(image);
-  });
+  const sliderTitlePanel = document.createElement("div");
+  sliderTitlePanel.className = "slider-title-panel";
 
-  sliderWindow.append(track);
+  const sliderTitle = document.createElement("div");
+  sliderTitle.className = "slider-title";
 
   const dots = document.createElement("div");
   dots.className = "slider-dots";
 
+  sliderTitlePanel.append(sliderTitle, dots);
+
+  projects.forEach((project, index) => {
+    const image = document.createElement("img");
+    image.className = "slide-image";
+    image.src = project.image;
+    image.alt = project.title;
+    image.dataset.index = index;
+    track.append(image);
+
+    const dot = document.createElement("div");
+    dot.className = "dot";
+    dots.append(dot);
+  });
+
+  sliderWindow.append(track);
+
   const navigationBar = document.createElement("div");
   navigationBar.className = "navigation-bar";
-  navigationBar.append(prevButton, dots, nextButton);
+  navigationBar.append(prevButton, sliderTitlePanel, nextButton);
 
   slider.append(navigationBar, sliderWindow);
 
@@ -65,6 +80,8 @@ function createSlider() {
     moveFirstSlideToEnd(slideWidth);
     moveLastSlideToFront(slideWidth);
   });
+
+  updateSliderTitle();
 
   function moveLastSlideToFront(width) {
     if (currentSlide === 0) {
@@ -86,6 +103,11 @@ function createSlider() {
       track.offsetHeight;
       track.style.transition = "transform 0.35s steps(12)";
     }
+  }
+
+  function updateSliderTitle() {
+    const projectIndex = Number(track.children[currentSlide].dataset.index);
+    sliderTitle.textContent = projects[projectIndex].title;
   }
 
   return slider;
