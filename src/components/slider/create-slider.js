@@ -4,6 +4,7 @@ import { projects } from "./projects.js";
 
 loadStyle("./src/components/slider/styles.css");
 let currentSlide = 0;
+let targetProjectIndex = null;
 const maxSlides = projects.length;
 
 function createSlider() {
@@ -14,13 +15,7 @@ function createSlider() {
   const prevButton = createButton({
     className: "slider-btn slider-btn-prev",
     onClick: () => {
-      const slideWidth = sliderWindow.clientWidth;
-      prevButton.disabled = true;
-      moveLastSlideToFront(slideWidth);
-      currentSlide = currentSlide - 1;
-      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      updateSliderTitle();
-      updateActiveDot();
+      prevSlide();
     },
   });
   prevButton.setAttribute("aria-label", "Previous slide");
@@ -28,12 +23,7 @@ function createSlider() {
   const nextButton = createButton({
     className: "slider-btn slider-btn-next",
     onClick: () => {
-      const slideWidth = sliderWindow.clientWidth;
-      nextButton.disabled = true;
-      currentSlide = currentSlide + 1;
-      track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-      updateSliderTitle();
-      updateActiveDot();
+      nextSlide();
     },
   });
   nextButton.setAttribute("aria-label", "Next slide");
@@ -65,6 +55,12 @@ function createSlider() {
 
     const dot = document.createElement("div");
     dot.className = "dot active";
+
+    dot.addEventListener("click", () => {
+      targetProjectIndex = index;
+      goToSlide(targetProjectIndex);
+    });
+
     dotElements.push(dot);
     dots.append(dot);
   });
@@ -78,15 +74,45 @@ function createSlider() {
   slider.append(navigationBar, sliderWindow);
 
   track.addEventListener("transitionend", () => {
-    nextButton.disabled = false;
-    prevButton.disabled = false;
     const slideWidth = sliderWindow.clientWidth;
     moveFirstSlideToEnd(slideWidth);
     moveLastSlideToFront(slideWidth);
+
+    if (targetProjectIndex !== null) {
+      if (getCurrentProjectIndex() !== targetProjectIndex) {
+        goToSlide(targetProjectIndex);
+        return;
+      }
+      targetProjectIndex = null;
+    }
+
+    nextButton.disabled = false;
+    prevButton.disabled = false;
+    updateSliderTitle();
+    updateActiveDot();
   });
 
   updateSliderTitle();
   updateActiveDot();
+
+  function nextSlide() {
+    const slideWidth = sliderWindow.clientWidth;
+    nextButton.disabled = true;
+    currentSlide = currentSlide + 1;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    updateSliderTitle();
+    updateActiveDot();
+  }
+
+  function prevSlide() {
+    const slideWidth = sliderWindow.clientWidth;
+    prevButton.disabled = true;
+    moveLastSlideToFront(slideWidth);
+    currentSlide = currentSlide - 1;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    updateSliderTitle();
+    updateActiveDot();
+  }
 
   function moveLastSlideToFront(width) {
     if (currentSlide === 0) {
@@ -107,6 +133,14 @@ function createSlider() {
       track.style.transform = `translateX(-${currentSlide * width}px)`;
       track.offsetHeight;
       track.style.transition = "transform 0.35s steps(12)";
+    }
+  }
+
+  function goToSlide(index) {
+    if (index > getCurrentProjectIndex()) {
+      nextSlide();
+    } else if (index < getCurrentProjectIndex()) {
+      prevSlide();
     }
   }
 
