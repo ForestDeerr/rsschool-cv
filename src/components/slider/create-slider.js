@@ -7,6 +7,7 @@ let currentSlide = 0;
 const maxSlides = projects.length;
 
 function createSlider() {
+  const dotElements = [];
   const slider = document.createElement("section");
   slider.className = "slider";
 
@@ -19,6 +20,7 @@ function createSlider() {
       currentSlide = currentSlide - 1;
       track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
       updateSliderTitle();
+      updateActiveDot();
     },
   });
   prevButton.setAttribute("aria-label", "Previous slide");
@@ -31,6 +33,7 @@ function createSlider() {
       currentSlide = currentSlide + 1;
       track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
       updateSliderTitle();
+      updateActiveDot();
     },
   });
   nextButton.setAttribute("aria-label", "Next slide");
@@ -61,7 +64,8 @@ function createSlider() {
     track.append(image);
 
     const dot = document.createElement("div");
-    dot.className = "dot";
+    dot.className = "dot active";
+    dotElements.push(dot);
     dots.append(dot);
   });
 
@@ -82,6 +86,7 @@ function createSlider() {
   });
 
   updateSliderTitle();
+  updateActiveDot();
 
   function moveLastSlideToFront(width) {
     if (currentSlide === 0) {
@@ -105,9 +110,21 @@ function createSlider() {
     }
   }
 
+  function getCurrentProjectIndex() {
+    return Number(track.children[currentSlide].dataset.index);
+  }
+
   function updateSliderTitle() {
-    const projectIndex = Number(track.children[currentSlide].dataset.index);
-    sliderTitle.textContent = projects[projectIndex].title;
+    const index = getCurrentProjectIndex();
+    sliderTitle.textContent = projects[index].title;
+  }
+
+  function updateActiveDot() {
+    const index = getCurrentProjectIndex();
+    dotElements.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+    dotElements[index].classList.add("active");
   }
 
   return slider;

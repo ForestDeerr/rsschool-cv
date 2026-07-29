@@ -69,6 +69,10 @@
   cursor: pointer;
 }
 
+.active {
+  background-color: var(--accent);
+}
+
 .slider-title {
 }
 
