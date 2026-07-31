@@ -8,4 +8,18 @@ function createButton({ text, className, onClick, disabled = false }) {
   return button;
 }
 
-export { createButton };
+function createLinkButton({ text, className, href, newTab = true }) {
+  return createButton({
+    text,
+    className,
+    onClick: () => {
+      if (newTab) {
+        window.open(href, "_blank", "noopener,noreferrer");
+      } else {
+        window.location.href = href;
+      }
+    },
+  });
+}
+
+export { createButton, createLinkButton };
