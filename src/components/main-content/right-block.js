@@ -9,7 +9,7 @@ function createRightBlock(lang) {
   rightBlock.append(
     createContacts(lang),
     createProSkills(lang),
-    createSlider(),
+    createSlider(lang),
   );
 
   return rightBlock;

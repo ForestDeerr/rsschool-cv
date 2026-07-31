@@ -1,4 +1,5 @@
 import { modalContentRU } from "./components/modal/about-content-ru.js";
+import { sliderContentRU } from "./components/slider/slider-content-ru.js";
 
 const langRu = {
   pageTitle: "Егор Герасимчик | Frontend разработчик",
@@ -89,6 +90,7 @@ const langRu = {
   },
 
   modalContent: modalContentRU,
+  sliderContent: sliderContentRU,
 };
 
 export { langRu };

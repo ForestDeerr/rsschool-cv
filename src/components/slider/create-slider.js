@@ -1,13 +1,13 @@
 import { createButton, createLinkButton } from "../utils/create-button.js";
 import { loadStyle } from "../utils/load-style.js";
-import { projects } from "./projects.js";
 
 loadStyle("./src/components/slider/styles.css");
 let currentSlide = 0;
 let targetProjectIndex = null;
-const maxSlides = projects.length;
 
-function createSlider() {
+function createSlider(lang) {
+  const projects = lang.sliderContent;
+  const maxSlides = projects.length;
   const dotElements = [];
   const slider = document.createElement("section");
   slider.className = "slider";

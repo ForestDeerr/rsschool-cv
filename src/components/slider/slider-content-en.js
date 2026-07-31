@@ -1,4 +1,4 @@
-const projects = [
+const sliderContentEN = [
   {
     title: "Async Race",
     image: "./src/components/slider/assets/image.png",
@@ -33,4 +33,4 @@ const projects = [
   },
 ];
 
-export { projects };
+export { sliderContentEN };

@@ -1,4 +1,5 @@
 import { modalContentEN } from "./components/modal/about-content-en.js";
+import { sliderContentEN } from "./components/slider/slider-content-en.js";
 
 const langEn = {
   pageTitle: "Egor Gerasimchik | Frontend Developer",
@@ -89,6 +90,7 @@ const langEn = {
   },
 
   modalContent: modalContentEN,
+  sliderContent: sliderContentEN,
 };
 
 export { langEn };
