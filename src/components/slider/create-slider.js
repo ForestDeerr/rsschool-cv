@@ -1,4 +1,4 @@
-import { createButton } from "../utils/create-button.js";
+import { createButton, createLinkButton } from "../utils/create-button.js";
 import { loadStyle } from "../utils/load-style.js";
 import { projects } from "./projects.js";
 
@@ -30,6 +30,24 @@ function createSlider() {
 
   const sliderWindow = document.createElement("div");
   sliderWindow.className = "slider-window";
+
+  const sliderInfo = document.createElement("div");
+  sliderInfo.className = "slider-info";
+
+  const infoDescription = document.createElement("div");
+  infoDescription.className = "info-description";
+
+  const description = document.createElement("div");
+  description.className = "description";
+
+  const info = document.createElement("div");
+  info.className = "info";
+
+  const infoLinks = document.createElement("div");
+  infoLinks.className = "info-links";
+
+  infoDescription.append(infoLinks);
+  sliderInfo.append(infoDescription);
 
   const track = document.createElement("div");
   track.className = "slider-track";
@@ -65,7 +83,7 @@ function createSlider() {
     dots.append(dot);
   });
 
-  sliderWindow.append(track);
+  sliderWindow.append(sliderInfo, track);
 
   const navigationBar = document.createElement("div");
   navigationBar.className = "navigation-bar";
@@ -88,11 +106,11 @@ function createSlider() {
 
     nextButton.disabled = false;
     prevButton.disabled = false;
-    updateSliderTitle();
+    updateSlider();
     updateActiveDot();
   });
 
-  updateSliderTitle();
+  updateSlider();
   updateActiveDot();
 
   function nextSlide() {
@@ -100,7 +118,7 @@ function createSlider() {
     nextButton.disabled = true;
     currentSlide = currentSlide + 1;
     track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    updateSliderTitle();
+    updateSlider();
     updateActiveDot();
   }
 
@@ -110,7 +128,7 @@ function createSlider() {
     moveLastSlideToFront(slideWidth);
     currentSlide = currentSlide - 1;
     track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    updateSliderTitle();
+    updateSlider();
     updateActiveDot();
   }
 
@@ -148,9 +166,38 @@ function createSlider() {
     return Number(track.children[currentSlide].dataset.index);
   }
 
-  function updateSliderTitle() {
+  function updateSlider() {
+    description.replaceChildren();
+    infoDescription.replaceChildren();
+    infoLinks.replaceChildren();
+
     const index = getCurrentProjectIndex();
     sliderTitle.textContent = projects[index].title;
+
+    projects[index].description.forEach((des) => {
+      const descript = document.createElement("div");
+      descript.textContent = des;
+
+      description.append(descript);
+    });
+
+    sliderInfo.append(description);
+    info.textContent = projects[index].info;
+
+    const citHubBtn = createLinkButton({
+      text: "GitHub",
+      className: "link-btn",
+      href: projects[index].github,
+    });
+
+    const demoBtn = createLinkButton({
+      text: "Demo",
+      className: "link-btn",
+      href: projects[index].demo,
+    });
+
+    infoLinks.append(citHubBtn, demoBtn);
+    infoDescription.append(info, infoLinks);
   }
 
   function updateActiveDot() {
