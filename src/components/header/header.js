@@ -11,7 +11,7 @@ function createHeader(lang) {
   setting.className = "setting";
   setting.append(createLangBtn(), createThemBtn(), createModalBtn(lang));
 
-  header.append(createNavigation(lang), setting);
+  header.append(setting, createNavigation(lang));
 
   return header;
 }
