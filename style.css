@@ -123,7 +123,6 @@ footer {
 
 button {
   all: unset;
-  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -542,9 +541,27 @@ button {
   }
 }
 
+@media (max-width: 992px) {
+  .navigation-panel {
+    justify-content: flex-end;
+  }
+  .navigation-panel ul {
+    display: none;
+  }
+  .setting {
+    justify-content: flex-end;
+  }
+}
+
 @media (max-width: 870px) {
   h1,
   h2 {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .setting {
+    display: none;
   }
 }

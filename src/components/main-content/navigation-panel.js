@@ -1,4 +1,5 @@
 import { getNavigationLinks } from "../../constants.js";
+import { burgerBtn } from "../header/burger-button.js";
 
 function createNavigation(lang) {
   const links = getNavigationLinks(lang);
@@ -19,7 +20,7 @@ function createNavigation(lang) {
     ul.append(li);
   });
 
-  nav.append(ul);
+  nav.append(ul, burgerBtn());
 
   return nav;
 }
