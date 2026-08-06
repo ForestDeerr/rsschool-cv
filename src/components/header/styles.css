@@ -1,13 +1,12 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  background: var(--bg-right);
+  background: var(--bg-left);
 
   transform: translateX(100%);
   transition: transform 0.3s steps(8);

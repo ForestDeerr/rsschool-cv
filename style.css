@@ -561,7 +561,4 @@ button {
 }
 
 @media (max-width: 768px) {
-  .setting {
-    display: none;
-  }
 }
