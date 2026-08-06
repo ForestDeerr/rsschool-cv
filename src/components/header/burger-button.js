@@ -1,12 +1,13 @@
 import { createButton } from "../utils/create-button.js";
 
 import { loadStyle } from "../utils/load-style.js";
+import { burgerMobileMenu } from "./burger-menu.js";
 
 loadStyle("./src/components/header/styles.css");
 
 let isOpen = false;
 
-function burgerBtn() {
+function burgerBtn(mobileMenu) {
   const burgerMenu = document.createElement("button");
   burgerMenu.className = "burger-btn";
   burgerMenu.type = "button";
@@ -21,13 +22,14 @@ function burgerBtn() {
     if (!isOpen) {
       burgerMenu.classList.remove("closing");
       burgerMenu.classList.add("active-burger");
+      mobileMenu.classList.add("active-menu");
     } else {
       burgerMenu.classList.remove("active-burger");
       burgerMenu.classList.add("closing");
+      mobileMenu.classList.remove("active-menu");
     }
     isOpen = !isOpen;
   });
-
   return burgerMenu;
 }
 
