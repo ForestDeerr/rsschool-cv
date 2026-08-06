@@ -1,36 +1,41 @@
 import { createButton } from "../utils/create-button.js";
-
 import { loadStyle } from "../utils/load-style.js";
-import { burgerMobileMenu } from "./burger-menu.js";
 
 loadStyle("./src/components/header/styles.css");
 
 let isOpen = false;
 
 function burgerBtn(mobileMenu) {
-  const burgerMenu = document.createElement("button");
-  burgerMenu.className = "burger-btn";
-  burgerMenu.type = "button";
+  const burgerBtn = document.createElement("button");
+  burgerBtn.replaceChildren();
+  burgerBtn.className = "burger-btn";
+  burgerBtn.type = "button";
 
   for (let i = 0; i < 3; i++) {
     const line = document.createElement("span");
     line.className = "burger-line";
-    burgerMenu.append(line);
+    burgerBtn.append(line);
   }
-
-  burgerMenu.addEventListener("click", () => {
-    if (!isOpen) {
-      burgerMenu.classList.remove("closing");
-      burgerMenu.classList.add("active-burger");
-      mobileMenu.classList.add("active-menu");
-    } else {
-      burgerMenu.classList.remove("active-burger");
-      burgerMenu.classList.add("closing");
-      mobileMenu.classList.remove("active-menu");
-    }
-    isOpen = !isOpen;
+  burgerBtn.addEventListener("click", () => {
+    toggleBurgerMenu(burgerBtn, mobileMenu);
   });
-  return burgerMenu;
+
+  return burgerBtn;
 }
 
-export { burgerBtn };
+function toggleBurgerMenu(btn, mobileMenu) {
+  if (!isOpen) {
+    btn.classList.remove("closing");
+    btn.classList.add("active-burger");
+    mobileMenu.classList.add("active-menu");
+    document.body.classList.add("modal-open");
+  } else {
+    btn.classList.remove("active-burger");
+    btn.classList.add("closing");
+    mobileMenu.classList.remove("active-menu");
+    document.body.classList.remove("modal-open");
+  }
+  isOpen = !isOpen;
+}
+
+export { burgerBtn, toggleBurgerMenu };

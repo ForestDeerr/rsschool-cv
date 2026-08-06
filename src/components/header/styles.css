@@ -19,6 +19,46 @@
   transform: translateX(0);
 }
 
+.mobile-navigation-panel {
+}
+
+.ul-mobile-menu {
+  display: flex;
+  padding: 0 10px;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-navigation-panel li {
+  width: 100%;
+  height: 25px;
+  border: 8px solid transparent;
+  border-image: url(../language-button/images/border.png) 8 fill;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  transition:
+    transform 0.15s steps(2),
+    filter 0.15s;
+}
+
+.mobile-navigation-panel a {
+  text-decoration: none;
+  color: var(--text-navigation-panel-btn);
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+}
+
+.mobile-navigation-panel li:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
 .burger-btn {
   position: absolute;
   top: -100%;

@@ -1,7 +1,6 @@
 import { getNavigationLinks } from "../../constants.js";
-import { burgerBtn } from "../header/burger-button.js";
 
-function createNavigation(lang, burgerMenu) {
+function createNavigation(lang, burgerBtn) {
   const links = getNavigationLinks(lang);
 
   const nav = document.createElement("nav");
@@ -20,7 +19,7 @@ function createNavigation(lang, burgerMenu) {
     ul.append(li);
   });
 
-  nav.append(ul, burgerBtn(burgerMenu));
+  nav.append(ul, burgerBtn);
 
   return nav;
 }
