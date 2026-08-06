@@ -1,4 +1,4 @@
-.burger-menu {
+.burger-btn {
   position: absolute;
   top: -100%;
   width: 27px;
@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.burger-menu:hover {
+.burger-btn:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 4px var(--accent));
 }
@@ -23,24 +23,24 @@
   transition: all 0.25s steps(5);
 }
 
-.burger-menu.active-burger .burger-line:nth-child(1) {
+.burger-btn.active-burger .burger-line:nth-child(1) {
   animation: burgerTop 0.7s steps(5) forwards;
 }
 
-.burger-menu.closing .burger-line:nth-child(1) {
+.burger-btn.closing .burger-line:nth-child(1) {
   animation: burgerTopRe 0.7s steps(5) forwards;
 }
 
-.burger-menu.active-burger .burger-line:nth-child(2) {
+.burger-btn.active-burger .burger-line:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
 
-.burger-menu.active-burger .burger-line:nth-child(3) {
+.burger-btn.active-burger .burger-line:nth-child(3) {
   animation: burgerBottom 0.7s steps(5) forwards;
 }
 
-.burger-menu.closing .burger-line:nth-child(3) {
+.burger-btn.closing .burger-line:nth-child(3) {
   animation: burgerBottomRe 0.7s steps(5) forwards;
 }
 
@@ -100,13 +100,13 @@
 }
 
 @media (max-width: 992px) {
-  .burger-menu {
+  .burger-btn {
     display: flex;
     position: relative;
     top: 0;
 
     margin-right: 0px;
-    right: 0px;
+    right: 10px;
 
     flex-direction: column;
     align-items: center;

@@ -8,7 +8,7 @@ let isOpen = false;
 
 function burgerBtn() {
   const burgerMenu = document.createElement("button");
-  burgerMenu.className = "burger-menu";
+  burgerMenu.className = "burger-btn";
   burgerMenu.type = "button";
 
   for (let i = 0; i < 3; i++) {
