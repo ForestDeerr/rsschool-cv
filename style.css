@@ -252,6 +252,12 @@ button {
   gap: 10px;
 }
 
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
 .title-blok {
   display: flex;
   border: 2px solid var(--accent);

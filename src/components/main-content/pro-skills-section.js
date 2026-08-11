@@ -1,6 +1,6 @@
 function createProSkills(lang) {
   const container = document.createElement("div");
-  container.className = "contact-container";
+  container.className = "skills-container";
 
   const titleBlock = document.createElement("div");
   titleBlock.className = "title-blok";
