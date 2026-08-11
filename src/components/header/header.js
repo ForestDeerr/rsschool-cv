@@ -1,4 +1,5 @@
 import { createLangBtn } from "../language-button/language-button.js";
+import { createLogo } from "../main-content/logo.js";
 import { createNavigation } from "../main-content/navigation-panel.js";
 import { createModalBtn } from "../modal/modal-button.js";
 import { createThemBtn } from "../thema-button/thema-button.js";
@@ -16,7 +17,16 @@ function createHeader(lang) {
   setting.className = "setting";
   setting.append(createLangBtn(), createThemBtn(), createModalBtn(lang));
 
-  header.append(burgerMenu, setting, createNavigation(lang, burBtn));
+  const logoSection = document.createElement("div");
+
+  logoSection.append(createLogo(lang));
+
+  header.append(
+    burgerMenu,
+    setting,
+    createNavigation(lang, burBtn),
+    logoSection,
+  );
 
   return header;
 }

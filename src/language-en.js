@@ -62,7 +62,7 @@ const langEn = {
       {
         type: "phone",
         label: "Phone",
-        value: "+375 (25) 963-04-78",
+        value: "+375(25)963-04-78",
       },
     ],
   },

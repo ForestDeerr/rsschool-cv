@@ -1,3 +1,5 @@
+import { createContacts } from "./contact-section.js";
+
 function createLogo(lang) {
   const logoSection = document.createElement("div");
 
@@ -36,7 +38,7 @@ function createLogo(lang) {
 
   back.append(left, right);
   logoImg.append(img);
-  logoTitle.append(h1, h2);
+  logoTitle.append(h1, h2, createContacts(lang));
   logo.append(logoImg, logoTitle);
   logoSection.append(logo);
 

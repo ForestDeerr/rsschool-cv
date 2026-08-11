@@ -31,6 +31,8 @@
   --scroll-track: #ffffff;
   --scroll-thumb: #f3a85d;
   --scroll-thumb-hover: #ffb15c;
+
+  --header-height: 354px;
 }
 
 [data-theme="dark"] {
@@ -73,6 +75,10 @@ h2 {
   margin: 0;
 }
 
+h2[id] {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -105,8 +111,11 @@ body {
 }
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
+  background-color: var(--bg);
+  padding-bottom: 15px;
 }
 
 main {
@@ -231,10 +240,15 @@ button {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 15px;
+  margin: 10px 0;
   color: var(--text-secondary);
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 10px;
 }
 
@@ -248,14 +262,6 @@ button {
   align-items: center;
   padding: 15px 0px;
   margin-bottom: 10px;
-}
-
-.contact-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
 }
 
 .skills-item {
@@ -343,7 +349,9 @@ button {
   display: flex;
   align-items: center;
   background: var(--bg-left);
-  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: var(--border);
+  padding-bottom: 10px;
   border-radius: 10px 0 0 0;
 }
 
@@ -397,8 +405,9 @@ button {
 
 .contact-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+  font-size: 10px;
 }
 
 .skills-list {
@@ -561,4 +570,13 @@ button {
 }
 
 @media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }

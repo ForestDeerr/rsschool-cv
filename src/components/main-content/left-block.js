@@ -3,14 +3,12 @@ import { createCodeExample } from "./code-example-section.js";
 import { createCourses } from "./courses-section.js";
 import { createEducation } from "./education-section.js";
 import { createLanguage } from "./language-section.js";
-import { createLogo } from "./logo.js";
 
 function createLeftBlock(lang) {
   const leftBlock = document.createElement("div");
   leftBlock.className = "left";
 
   leftBlock.append(
-    createLogo(lang),
     createAboutSection(lang),
     createCodeExample(lang),
     createCourses(lang),

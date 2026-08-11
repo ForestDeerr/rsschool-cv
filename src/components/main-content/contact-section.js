@@ -2,15 +2,7 @@ import { getContactIcon } from "./contact-icons.js";
 
 function createContacts(lang) {
   const container = document.createElement("div");
-  container.className = "contact-container contact-container--first";
-
-  const titleBlock = document.createElement("div");
-  titleBlock.className = "title-blok";
-
-  const title = document.createElement("p");
-  title.textContent = lang.contacts.title;
-
-  titleBlock.append(title);
+  container.className = "contact-container";
 
   const list = document.createElement("ul");
   list.className = "contact-list";
@@ -44,7 +36,7 @@ function createContacts(lang) {
     list.append(item);
   });
 
-  container.append(titleBlock, list);
+  container.append(list);
 
   return container;
 }
