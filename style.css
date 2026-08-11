@@ -32,7 +32,7 @@
   --scroll-thumb: #f3a85d;
   --scroll-thumb-hover: #ffb15c;
 
-  --header-height: 354px;
+  --header-height: 306px;
 }
 
 [data-theme="dark"] {
@@ -68,6 +68,8 @@
   --scroll-track: #141a23;
   --scroll-thumb: #f3a85d;
   --scroll-thumb-hover: #ffb15c;
+
+  --header-height: 306px;
 }
 
 h1,
@@ -228,10 +230,15 @@ button {
 }
 
 .right {
+  position: sticky;
+  top: var(--header-height);
+  z-index: -1;
+
   display: flex;
   background-color: var(--bg-right);
   color: var(--text-secondary);
   width: 35%;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 0 10px 0 0;
