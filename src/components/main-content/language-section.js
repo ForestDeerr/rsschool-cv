@@ -1,6 +1,6 @@
 function createLanguage(lang) {
   const container = document.createElement("div");
-  container.className = "main-container";
+  container.className = "language-container";
 
   const titleContainer = document.createElement("div");
   titleContainer.className = "main-container-title";

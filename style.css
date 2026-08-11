@@ -172,7 +172,6 @@ button {
   width: 100%;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 5px;
   border-bottom: 1px solid;
   border-color: var(--border);
   padding-bottom: 10px;
@@ -252,7 +251,8 @@ button {
   gap: 10px;
 }
 
-.skills-container {
+.skills-container,
+.language-container {
   display: flex;
   flex-direction: column;
   padding: 15px;
