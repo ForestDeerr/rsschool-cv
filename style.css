@@ -118,6 +118,7 @@ header {
   width: 100%;
   background-color: var(--bg);
   padding-bottom: 15px;
+  z-index: 10;
 }
 
 main {
@@ -230,15 +231,11 @@ button {
 }
 
 .right {
-  position: sticky;
   top: var(--header-height);
-  z-index: -1;
-
   display: flex;
   background-color: var(--bg-right);
   color: var(--text-secondary);
   width: 35%;
-  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 0 10px 0 0;
@@ -246,6 +243,7 @@ button {
 
 .contact-container {
   display: flex;
+  justify-content: center;
   margin: 10px 0;
   color: var(--text-secondary);
   gap: 10px;
@@ -379,6 +377,9 @@ button {
 }
 
 .logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 15px 10px 15px 70px;
   width: 100%;
   background-color: #e68f44;
@@ -419,7 +420,7 @@ button {
 .contact-list {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
   font-size: 10px;
 }
 
@@ -547,6 +548,14 @@ button {
 }
 
 @media (max-width: 1200px) {
+  :root {
+    --header-height: 360px;
+  }
+
+  [data-theme="dark"] {
+    --header-height: 360px;
+  }
+
   header {
     display: flex;
     flex-direction: column;
