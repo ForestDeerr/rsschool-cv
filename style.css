@@ -546,13 +546,13 @@ button {
   background: var(--scroll-thumb-hover);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
   :root {
-    --header-height: 360px;
+    --header-height: 357px;
   }
 
   [data-theme="dark"] {
-    --header-height: 360px;
+    --header-height: 357px;
   }
 
   header {
@@ -564,6 +564,7 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 20px 0 0 0;
   }
 
   .navigation-panel {
@@ -587,6 +588,11 @@ button {
   h1,
   h2 {
     font-size: 15px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 2px;
   }
 }
 
