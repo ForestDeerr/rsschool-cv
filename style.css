@@ -470,11 +470,10 @@ button {
 
 .setting {
   position: absolute;
-  top: 0;
   right: 0;
   display: flex;
-  gap: 10px;
-  margin: 5px;
+  gap: 5px;
+  margin: 20px 5px;
 }
 
 .code-editor {
