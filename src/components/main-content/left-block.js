@@ -1,3 +1,4 @@
+import { createSlider } from "../slider/create-slider.js";
 import { createAboutSection } from "./about-section.js";
 import { createCodeExample } from "./code-example-section.js";
 import { createCourses } from "./courses-section.js";
@@ -9,6 +10,7 @@ function createLeftBlock(lang) {
 
   leftBlock.append(
     createAboutSection(lang),
+    createSlider(lang),
     createCodeExample(lang),
     createCourses(lang),
     createEducation(lang),

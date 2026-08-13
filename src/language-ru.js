@@ -7,6 +7,7 @@ const langRu = {
   headerPosition: "Frontend разработчик",
 
   navAbout: "Обо мне",
+  navProject: "Мои проекты",
   navSkills: "Пример кода",
   navCourses: "Курсы",
   navEducation: "Образование",

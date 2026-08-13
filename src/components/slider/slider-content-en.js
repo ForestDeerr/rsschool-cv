@@ -9,7 +9,7 @@ const sliderContentEN = [
   },
   {
     title: "News API",
-    image: "./src/components/slider/assets/image1.png",
+    image: "./src/components/slider/assets/image.png",
     description: ["JavaScript", "News API", "Fetch", "Responsive UI"],
     info: "A news application that loads articles from different sources using a public API. Includes search, category filters, pagination, and responsive layout.",
     github: "https://github.com/yourname/news-api",
@@ -17,7 +17,7 @@ const sliderContentEN = [
   },
   {
     title: "Nonograms",
-    image: "./src/components/slider/assets/image2.png",
+    image: "./src/components/slider/assets/image.png",
     description: ["TypeScript", "Game", "Algorithms", "LocalStorage"],
     info: "A classic Nonograms puzzle game featuring multiple difficulty levels, game timer, hints, progress saving, and keyboard support.",
     github: "https://github.com/yourname/nonograms",
@@ -25,7 +25,7 @@ const sliderContentEN = [
   },
   {
     title: "Water Tracker",
-    image: "./src/components/slider/assets/image3.png",
+    image: "./src/components/slider/assets/image.png",
     description: ["Firebase", "TypeScript", "Authentication", "Realtime DB"],
     info: "A team water consumption tracker with authentication, real-time database synchronization, balance calculation, and modern UI built with TypeScript.",
     github: "https://github.com/yourname/water-tracker",

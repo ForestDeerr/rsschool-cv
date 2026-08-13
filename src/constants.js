@@ -5,6 +5,10 @@ function getNavigationLinks(lang) {
       text: lang.navAbout,
     },
     {
+      href: "#project",
+      text: lang.navProject,
+    },
+    {
       href: "#skills",
       text: lang.navSkills,
     },

@@ -7,6 +7,7 @@ const langEn = {
   headerPosition: "Frontend Developer",
 
   navAbout: "About Me",
+  navProject: "My Project",
   navSkills: "Code Example",
   navCourses: "Courses",
   navEducation: "Education",

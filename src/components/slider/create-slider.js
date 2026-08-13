@@ -9,6 +9,17 @@ function createSlider(lang) {
   const projects = lang.sliderContent;
   const maxSlides = projects.length;
   const dotElements = [];
+
+  const titleContainer = document.createElement("div");
+  titleContainer.className = "main-container-title slider-title";
+
+  const title = document.createElement("h2");
+  title.className = "slider-title";
+  title.id = "project";
+  title.textContent = lang.navProject;
+
+  titleContainer.append(title);
+
   const slider = document.createElement("section");
   slider.className = "slider";
 
@@ -89,7 +100,7 @@ function createSlider(lang) {
   navigationBar.className = "navigation-bar";
   navigationBar.append(prevButton, sliderTitlePanel, nextButton);
 
-  slider.append(navigationBar, sliderWindow);
+  slider.append(titleContainer, navigationBar, sliderWindow);
 
   track.addEventListener("transitionend", () => {
     const slideWidth = sliderWindow.clientWidth;
