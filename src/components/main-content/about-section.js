@@ -12,11 +12,14 @@ function createAboutSection(lang) {
   const contentContainer = document.createElement("div");
   contentContainer.className = "main-container-content";
 
-  const text = document.createElement("p");
-  text.textContent = lang.aboutText;
+  lang.aboutText.forEach((text) => {
+    const paragraph = document.createElement("p");
+    paragraph.className = "about-text";
+    paragraph.textContent = text;
+    contentContainer.append(paragraph);
+  });
 
   titleContainer.append(title);
-  contentContainer.append(text);
   container.append(titleContainer, contentContainer);
 
   return container;

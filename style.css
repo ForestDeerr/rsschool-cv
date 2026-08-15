@@ -195,6 +195,9 @@ button {
 }
 
 .main-container-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   padding: 0 15px;
   width: 90%;
 }
@@ -254,6 +257,11 @@ button {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+.about-text {
+  font-size: 12px;
+  text-indent: 20px;
 }
 
 .skills-container,
@@ -355,6 +363,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 .logo {
   position: relative;
   display: flex;

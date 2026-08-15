@@ -1,3 +1,4 @@
+import { aboutEn } from "./about.js";
 import { modalContentEN } from "./components/modal/about-content-en.js";
 import { sliderContentEN } from "./components/slider/slider-content-en.js";
 
@@ -14,8 +15,7 @@ const langEn = {
   navLanguages: "Languages",
 
   aboutTitle: "About Me",
-  aboutText:
-    "My objective is to transition into a new professional field. I am results-oriented and consistently pursue goals despite challenges. I bring over 15 years of experience in industrial enterprises as a project manager. Committed to continuous learning and professional development.",
+  aboutText: aboutEn,
 
   codeExampleTitle: "Code Example",
   coursesTitle: "Courses",

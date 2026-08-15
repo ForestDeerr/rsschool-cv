@@ -1,3 +1,4 @@
+import { aboutRu } from "./about.js";
 import { modalContentRU } from "./components/modal/about-content-ru.js";
 import { sliderContentRU } from "./components/slider/slider-content-ru.js";
 
@@ -14,8 +15,7 @@ const langRu = {
   navLanguages: "Языки",
 
   aboutTitle: "Обо мне",
-  aboutText:
-    "Моя цель — перейти в новую профессиональную сферу. Я ориентирован на результат и всегда добиваюсь поставленных целей, несмотря на трудности. Имею более 15 лет опыта работы на промышленных предприятиях в должности руководителя проектов. Постоянно совершенствую свои знания и профессиональные навыки.",
+  aboutText: aboutRu,
 
   codeExampleTitle: "Пример кода",
   coursesTitle: "Курсы",
