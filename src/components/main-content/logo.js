@@ -39,7 +39,7 @@ function createLogo(lang) {
   back.append(left, right);
   logoImg.append(img);
   logoTitle.append(h1, h2, createContacts(lang));
-  logo.append(logoImg, logoTitle);
+  logo.append(logoTitle, logoImg);
   logoSection.append(logo);
 
   return logoSection;

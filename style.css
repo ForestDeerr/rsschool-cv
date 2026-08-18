@@ -417,7 +417,7 @@ button {
   border: 12px solid var(--bg-right);
   border-radius: 100px;
   position: relative;
-  left: 50px;
+  right: 8%;
   background-color: var(--accent);
 }
 
@@ -425,9 +425,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 10px 15px 70px;
+  padding: 15px 10px 15px 10px;
   width: 100%;
-  background-color: #e68f44;
+  background-color: var(--accent);
 }
 
 .rss-logo {
