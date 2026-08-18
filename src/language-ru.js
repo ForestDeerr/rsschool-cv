@@ -88,18 +88,22 @@ const langRu = {
       {
         name: "JavaScript",
         level: 80,
+        image: "./src/components/img/icon-skills/javascript_pixel_icon.png",
       },
       {
         name: "TypeScript",
         level: 50,
+        image: "./src/components/img/icon-skills/typescript_pixel_icon.png",
       },
       {
         name: "HTML / CSS",
         level: 90,
+        image: "./src/components/img/icon-skills/html_css_pixel_icon.png",
       },
       {
         name: "React",
         level: 20,
+        image: "./src/components/img/icon-skills/react_pixel_icon.png",
       },
     ],
   },

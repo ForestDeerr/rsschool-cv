@@ -307,6 +307,10 @@ button {
   padding: 15px;
 }
 
+.skill-container {
+  display: flex;
+}
+
 .title-blok {
   display: flex;
   border: 2px solid var(--accent);
@@ -324,7 +328,10 @@ button {
   width: 100%;
   flex-direction: column;
   gap: 5px;
-  align-items: center;
+}
+
+.image-skill {
+  width: 55px;
 }
 
 .progress-bar {

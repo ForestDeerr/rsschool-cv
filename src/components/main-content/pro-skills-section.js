@@ -14,6 +14,15 @@ function createProSkills(lang) {
   list.className = "skills-list";
 
   lang.proSkills.items.forEach((skill) => {
+    const skillContainer = document.createElement("div");
+    skillContainer.className = "skill-container";
+
+    const imageSkill = document.createElement("img");
+    imageSkill.className = "image-skill";
+    imageSkill.src = skill.image;
+
+    skillContainer.append(imageSkill);
+
     const item = document.createElement("li");
     item.className = "skills-item";
 
@@ -34,7 +43,9 @@ function createProSkills(lang) {
 
     progressBar.append(progress);
     item.append(text, progressBar);
-    list.append(item);
+
+    skillContainer.append(item);
+    list.append(skillContainer);
   });
 
   container.append(titleBlock, list);
