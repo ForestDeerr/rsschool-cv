@@ -1,4 +1,5 @@
-import { createContacts } from "./contact-section.js";
+import { createContacts } from "../main-content/contact-section.js";
+import { logoCharacteristics } from "./logo-characteristics.js";
 
 function createLogo(lang) {
   const logoSection = document.createElement("div");
@@ -13,8 +14,6 @@ function createLogo(lang) {
   img.className = "footer-img";
   img.src = "logo.png";
   img.alt = "Моё фото";
-  img.width = 200;
-  img.height = 200;
 
   const logoTitle = document.createElement("div");
   logoTitle.className = "logo-title";
@@ -27,19 +26,14 @@ function createLogo(lang) {
   h2.className = "rgb";
   h2.textContent = lang.headerPosition;
 
-  const left = document.createElement("div");
-  left.className = "left";
+  const logoContainer = document.createElement("div");
+  logoContainer.className = "logo-container";
 
-  const right = document.createElement("div");
-  right.className = "right";
-
-  const back = document.createElement("div");
-  back.className = "back";
-
-  back.append(left, right);
   logoImg.append(img);
   logoTitle.append(h1, h2, createContacts(lang));
-  logo.append(logoTitle, logoImg);
+
+  logoContainer.append(logoTitle, logoCharacteristics());
+  logo.append(logoContainer, logoImg);
   logoSection.append(logo);
 
   return logoSection;

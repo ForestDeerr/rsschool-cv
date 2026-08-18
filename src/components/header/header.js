@@ -1,5 +1,5 @@
 import { createLangBtn } from "../language-button/language-button.js";
-import { createLogo } from "../main-content/logo.js";
+import { createLogo } from "./logo.js";
 import { createNavigation } from "../main-content/navigation-panel.js";
 import { createModalBtn } from "../modal/modal-button.js";
 import { createThemBtn } from "../thema-button/thema-button.js";
