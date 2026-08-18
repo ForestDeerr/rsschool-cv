@@ -19,9 +19,11 @@ function createCourses(lang) {
     const content = document.createElement("div");
     content.className = "main-container-content";
 
-    const p = document.createElement("p");
+    const courseHeader = document.createElement("p");
+    courseHeader.className = "course-header";
 
     const link = document.createElement("a");
+    link.className = "curse-link";
     link.href = course.url;
     link.target = "_blank";
     link.textContent = course.name;
@@ -31,17 +33,19 @@ function createCourses(lang) {
     const strong = document.createElement("strong");
     strong.textContent = course.course;
 
-    p.append(link, br, strong, ` ${course.description}`);
+    courseHeader.append(link, br, strong, ` ${course.description}`);
 
     const ul = document.createElement("ul");
+    ul.className = "course-topics";
 
     course.skills.forEach((skill) => {
       const li = document.createElement("li");
-      li.textContent = skill;
+      li.className = "course-topic";
+      li.textContent = `- ${skill}`;
       ul.append(li);
     });
 
-    content.append(p, ul);
+    content.append(courseHeader, ul);
     container.append(content);
   });
 

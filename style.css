@@ -214,11 +214,6 @@ button {
   width: 100%;
 }
 
-.main-container-content a {
-  color: var(--link);
-  text-decoration: none;
-}
-
 .main-container-content-cod {
   background-color: var(--code-bg);
   width: 90%;
@@ -262,6 +257,36 @@ button {
 .about-text {
   font-size: 12px;
   text-indent: 20px;
+}
+
+.course-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 0 0 15px 15px;
+}
+
+.course-topic {
+  font-size: 8px;
+}
+
+.course-header {
+  line-height: 1.8;
+  font-size: 10px;
+  color: var(--text-green);
+}
+
+.curse-link {
+  color: var(--link);
+  text-decoration: none;
+  transition:
+    transform 0.15s steps(2),
+    filter 0.15s;
+}
+
+.curse-link :hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px var(--accent));
 }
 
 .skills-container,
