@@ -73,7 +73,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
@@ -206,6 +207,16 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.education-institution {
+  font-size: 10px;
+  color: var(--text-green);
+}
+
+.education-item p,
+.education-specialty {
+  font-size: 10px;
 }
 
 .main-container-end {

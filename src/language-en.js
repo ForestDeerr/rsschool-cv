@@ -22,9 +22,22 @@ const langEn = {
   education: {
     title: "Education",
     items: [
-      "Belarusian State Agricultural Academy — Faculty of Economics, major in Economic Cybernetics",
-      "Belarusian National Technical University — Faculty of Instrumentation Engineering, major in Metrology, Standardization and Certification",
-      "Belarusian National Technical University — Master's Degree in Quality Management",
+      {
+        institution: "Belarusian State Agricultural Academy",
+        faculty: "Faculty of Economics",
+        specialty: "Economic Cybernetics",
+      },
+      {
+        institution: "Belarusian National Technical University",
+        faculty: "Faculty of Instrument Engineering",
+        specialty: "Metrology, Standardization and Certification",
+      },
+      {
+        institution: "Belarusian National Technical University",
+        degree: "Master's Degree",
+        specialty: "Quality Management",
+        qualification: "Master of Quality Management",
+      },
     ],
   },
 
