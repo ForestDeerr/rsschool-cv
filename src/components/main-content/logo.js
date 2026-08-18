@@ -11,7 +11,7 @@ function createLogo(lang) {
 
   const img = document.createElement("img");
   img.className = "footer-img";
-  img.src = "elk.png";
+  img.src = "logo.png";
   img.alt = "Моё фото";
   img.width = 200;
   img.height = 200;
