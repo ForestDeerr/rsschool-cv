@@ -269,6 +269,26 @@ button {
   gap: 10px;
 }
 
+.contact-label {
+  color: var(--header-lvl);
+  text-transform: uppercase;
+  text-shadow:
+    2px 0 var(--bg-right),
+    -2px 0 var(--bg-right),
+    0 2px var(--bg-right),
+    0 -2px var(--bg-right);
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-image {
+  width: 30px;
+}
+
 .about-text {
   font-size: 12px;
   text-indent: 20px;
@@ -404,11 +424,6 @@ button {
 .navigation-panel li:hover {
   transform: scale(1.05);
   filter: drop-shadow(0 0 4px var(--accent));
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
 }
 
 .rss-logo {

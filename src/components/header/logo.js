@@ -1,4 +1,4 @@
-import { createContacts } from "../main-content/contact-section.js";
+import { createContacts } from "./contact-section.js";
 import { logoCharacteristics } from "./logo-characteristics.js";
 
 function createLogo(lang) {

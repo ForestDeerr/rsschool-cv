@@ -1,4 +1,4 @@
-import { getContactIcon } from "./contact-icons.js";
+import { templates } from "./contact-icons.js";
 
 function createContacts(lang) {
   const container = document.createElement("div");
@@ -11,14 +11,15 @@ function createContacts(lang) {
     const item = document.createElement("li");
     item.className = "contact-item";
 
-    const img = document.createElement("div");
-    img.className = "img";
-    img.append(getContactIcon(contact.type));
+    const img = document.createElement("img");
+    img.className = "contact-image";
+    img.src = templates[contact.type];
 
     const text = document.createElement("div");
-    text.className = "text";
+    text.className = "contact-text";
 
     const label = document.createElement("p");
+    label.className = "contact-label";
     label.textContent = `${contact.label}:`;
 
     const value = document.createElement("p");
