@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <div class="logo-img">
-          <img class="footer-img" src="elk.png" alt="Моё фото" width="200" height="200">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Gerasimchyk Egor</title>
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKFQ1QqmgZP0runFhR0iIZ_2WJtJVfMnWwWf_k31d5Rdw9ZPUZ" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-img">
+        <img class="footer-img" src="elk.png" alt="Моё фото" width="200" height="200">
+      </div>
+      <div class="logo-title">
+        <h1 class="rgb">Gerasimchyk Egor</h1>
+        <h2 class="rgb">frontend developer</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="left">
+      <nav class="navigation-panel">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Code Example</a></li>
+          <li><a href="#curses">Courses</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#language">Languages</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-container">
+        <div class="main-container-title">
+          <h2 id="about">About Me</h2>
         </div>
-        <div class="logo-title">
-          <h1 class="rgb">Gerasimchyk Egor</h1>
-          <h2 class="rgb">frontend developer</h2>
+        <div class="main-container-content">
+          <p>
+            My objective is to transition into a new professional field. I am
+            results-oriented and consistently pursue goals despite challenges.
+            I bring over 15 years of experience in industrial enterprises as a
+            project manager. Committed to continuous learning and professional
+            development.
+          </p>
         </div>
       </div>
-    </header>
 
-    <main>
-      <div class="left">
-        <nav class="navigation-panel">
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Code Example</a></li>
-            <li><a href="#curses">Courses</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#language">Languages</a></li>
-          </ul>
-        </nav>
-
-        <div class="main-container">
-          <div class="main-container-title">
-            <h2 id="about">About Me</h2>
-          </div>
-          <div class="main-container-content">
-            <p>
-              My objective is to transition into a new professional field. I am results-oriented and consistently pursue goals despite challenges.  
-              I bring over 15 years of experience in industrial enterprises as a project manager.  
-              Committed to continuous learning and professional development.
-            </p>
-          </div>
+      <div class="main-container">
+        <div class="main-container-title">
+          <h2 id="skills">Code Example</h2>
         </div>
-
-        <div class="main-container">
-          <div class="main-container-title">
-            <h2 id="skills">Code Example</h2>
-          </div>
-          <div class="main-container-content-cod">
-            <pre><code>
+        <div class="main-container-content-cod">
+          <pre><code>
     function order(words) {
     const wordsArray = words.split(' ');
     const orderedWords = [];
@@ -71,241 +73,248 @@
     // пример использовани
     order("is2 Thi1s T4est 3a"); // ➜ "Thi1s is2 3a T4est"
               </code></pre>
-          </div>
         </div>
-
-        <div class="main-container">
-          <div class="main-container-title">
-            <h2 id="curses">Courses</h2>
-          </div>
-          <div class="main-container-content">
-            <p>
-              <a href="https://htmlacademy.ru/" target="_blank">
-                HTML Academy
-              </a>
-              <br />
-              <strong>"JavaScript Developer Program #14"</strong> with coursework in:
-            </p>
-            <ul>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-            </ul>
-          </div>
-
-          <div class="main-container-content">
-            <p>
-              <a href="https://rs.school/" target="_blank">
-                Rs Scooll
-              </a>
-              <br />
-              <strong>«Js/Front-end Course 2024»</strong> с
-              with coursework in:
-            </p>
-            <ul>
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="main-container">
-          <div class="main-container-title">
-            <h2 id="education">Education</h2>
-          </div>
-          <div class="main-container-content">
-<ul class="education">
-  <li>Belarusian State Agricultural Academy — Faculty of Economics, major in Economic Cybernetics</li>
-  <li>Belarusian National Technical University — Faculty of Instrumentation Engineering, major in Metrology, Standardization and Certification</li>
-  <li>Belarusian National Technical University — Master’s Degree in Quality Management</li>
-</ul>
-          </div>
-        </div>
-
-        <div class="main-container">
-          <div class="main-container-title">
-            <h2 id="language">Language</h2>
-          </div>
-          <div class="main-container-content">
-              <ul class="education">
-                <li class="education-list">
-                  <div class="education-title"><p>Belarusian</p></div>
-                  <div class="stars"> 
-                    <div class="star full"></div>
-                    <div class="star full"></div>
-                    <div class="star full"></div>
-                    <div class="star"></div>
-                    <div class="star"></div>
-                  </div>
-                  </li>
-                  <li class="education-list">
-                    <div class="education-title"><p>Russian</p></div>
-                    <div class="stars"> 
-                      <div class="star full"></div>
-                      <div class="star full"></div>
-                      <div class="star full"></div>
-                      <div class="star full"></div>
-                      <div class="star"></div>
-                    </div>
-                    </li>
-                    <li class="education-list">
-                      <div class="education-title"><p>English</p></div>
-                      <div class="stars"> 
-                        <div class="star full"></div>
-                        <div class="star full"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                      </div>
-                      </li>
-              </ul>
-          </div>
-        </div>
-
-        <div class="main-container-end">
-          <p class="text-footer">
-            © <time datetime="2025">2025</time> Gerasimchyk Egor. All rights reserved.
-          </p>
-        </div>
-
       </div>
 
-      <div class="right">
-        <div class="wraper">
-          <div class="contact-container contact-container--first">
-            <div class="title-blok">
-              <p>Contact me</p>
-            </div>
+      <div class="main-container">
+        <div class="main-container-title">
+          <h2 id="curses">Courses</h2>
+        </div>
+        <div class="main-container-content">
+          <p>
+            <a href="https://htmlacademy.ru/" target="_blank">
+              HTML Academy
+            </a>
+            <br>
+            <strong>"JavaScript Developer Program #14"</strong> with
+            coursework in:
+          </p>
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+          </ul>
+        </div>
 
-            <ul class="contact-list">
-              <li class="contact-item">
-                <div class="img">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                  viewBox="0 0 14000 14000"
-                   xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="#e68f44" d="M9510.92 10766.33l11.92 -621.08 1220.39 -0.27 6.92 624.54 -1239.23 -3.19zm-4991.36 0l-1246.28 3.12 23.38 -624.2 1228.58 -0.15 -5.68 621.23zm3745.13 -4365.31l1867.31 15.74 0 611.46 618.15 0 0.4 1877.07 -618.55 0 0 626.55 -1882.12 -14.96 -5.03 -611.59 -605.99 0 -2.61 -1877.07 611.63 0 16.81 -627.2zm-2495.83 15.74l-0.59 611.46 626.8 0 1.64 1877.07 -627.85 0 0 611.46c-242.51,43.68 -745.46,18.69 -1014.52,16.47 -1010.69,-8.34 -856.94,182.79 -854.03,-627.93l-624.46 0.01 -3.56 -1875.96 634.63 -9.17c-11.34,-95.04 -39.01,-521.12 14.72,-582.22 90.36,-102.73 1811.55,-27.62 1847.22,-21.19zm5593.9 -3118.19c203.15,-5.94 444.59,-37.29 633.48,24.33l0.88 570.96 -63.44 36.36 -568.27 0 -2.65 -631.65zm-8699.06 -4.03l5.76 635.68 -641.44 0 0 -637.49 635.68 1.81zm1855.86 7471.79l4991.36 0 3.21 625.02c197.65,-8.9 433.96,-36.82 614.76,23.23l27.91 596.44 2456.99 -1.38 -5.81 -622.21 622.4 -4.13 -2.22 -625.46 626.89 -9.18 -0.66 -4338.64 -624.28 4.43 -1.95 -1864.88 -620.44 -13.83 17.03 -1857.83c-202.6,9.63 -445.76,36.36 -634.64,-23.19l0.59 -594.96 -595.55 0c-44.79,-143.24 -39.03,-463.08 -23.19,-617.41l-2487.19 -17.22 9.19 636.93c259.17,-30.92 654.52,-5.66 940.36,-10.38 369.8,-6.11 297.9,-72.39 297.63,622.86l1248.58 -3.02 -17.77 627.05 -1856.25 7.64 -6.84 -622.87 -4969.49 2.62 -5.77 620.24 -1860.71 -11.66 5.11 -619.63 1238.11 -11.46c-80.51,-748.26 52.78,-615.68 289.24,-611.77 315.99,5.21 632.34,1.95 948.42,1.95l0 -612.65 -2486.06 0.91c14.2,196.53 38.36,434.45 -23.77,617.87l-594.39 0 0 594.96c-183.9,60 -420.21,32.08 -617.87,23.19l0 1869.48 -628.22 -5.23 0 1871.84 -618.15 -7.6 0.65 4350.3 618.39 0.01 -7.29 629.66 637.11 11.42 -19.25 611.23 2490.32 8.94 2.31 -627.38 617.69 0.77 3.51 -625.02z"/>
-                  </svg>
-                </div>
-                <div class="text">
-                  <p>Diccord:</p>
-                  <p>Yahor Herasimchyk</p>
-                  <p>@ForestDeerr</p>
-                </div>
-              </li>
-              <li class="contact-item">
-                <div class="img">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1.1"
-                  viewBox="0 0 14000 14000"
-                   xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="_2390871654960">
-                     <path fill="#e68f44" d="M11790.89 3536.51l968.61 -2.32 -1.61 6760.7 -949.42 7.55 -19.18 942.9c-1259.29,1.26 -9069.31,101 -9639.9,-47.6l-7.93 -908.76 -953.96 -11.48 0.19 -6713.79 957.39 -33.34 2.25 926.19 947.97 61.45 37.65 916.43 950.49 23.61 -11.56 -916.73 -957.12 -45.85 -2.71 -891.25 -941.3 -86.43 -20.86 -234.43 -0.15 -708.01 9643.82 -0.42 -2.67 961.58zm-10641.57 -963.07l-932.75 6.22 3.01 8665.19 921.84 16.78 52.18 921.08 11570.7 37.87 11.94 -938.13 946.41 -28.53 3.2 -8684.94 -930.84 -9.5 -38.87 -950.41 -11463.67 2.59 -143.15 961.78z"/>
-                     <path fill="#e68f44" d="M9866.84 5549.67l-969.86 60.57 -11.75 903.07 -927.68 35.63c-11.56,102.15 -27.27,403.9 -40.16,464.85l-173.86 473.81 -1729.52 -17.39 -68.16 -947.51 -903.99 -5.04 -39.98 -946.4 -926.34 -21.97 34.22 955.94 899.29 50.61 81.4 933.4 897.74 6.83 40.39 959.79 1880.83 -27.46 20.18 -926.46 948.93 -49.66 15.18 -923.52 937.29 -19.68 35.85 -959.41z"/>
-                     <polygon fill="#e68f44" points="9859.9,5555.27 10821.52,5558.78 10820.99,4591.51 9853.57,4587.24 "/>
-                     <polygon fill="#e68f44" points="10817.4,4552.76 11779.03,4556.27 11778.49,3589 10811.07,3584.73 "/>
-                    </g>
-                  </svg>
-                </div>
-                <div class="text">
-                  <p>Mail:</p>
-                  <p>Qwerti@gmail.com</p>
-                </div>
-              </li>
-              <li class="contact-item">
-                <div class="img">
-                  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" version="1.1"
-                  viewBox="0 0 14000 14000"
-                   xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path fill="#e68f44" d="M12780.37 12779.85l40.18 -187.01c2.36,-59.38 -3.47,-145.38 -3.63,-207.67 168.71,0.43 269.76,18.9 390.53,-31.69 80.2,-143.39 29.43,-637.41 57.19,-841.6l394.54 -11.87 -0.37 -1690.51 -854.8 -21.33 -5.72 -397.3c-255.68,-78.64 -985.86,-35.52 -1291.31,-26.57l5.2 -432.5 -1290.5 -0.08 -0.15 430.23 -429.04 -1.35 -1.31 860.84 -425.94 -0.48 -1.3 429.76 -1717.66 -0.34 -2.16 -422.33 -426.63 -8.66 -1.36 -420.21 -426.87 -10.76 -0.64 -416.63 -427.57 -9.25 -1.87 -419.85 -434.01 -7.9 5.03 -432.84 -437.81 4.22 8.16 -434.72 -63.45 -0.67 -372.82 4.8 -7.56 -435.16 -416.37 -2.63 -12.43 -426.04 -416.07 -1.83 -10.4 -425.42 -421.08 -1.99 -8.16 -426.02 -422.56 -1.94 -0.57 -1718.29 430.3 2.87 0.5 -429.88 857.26 1.37 1.56 -431.49 427.27 0.88 4.18 -1289.96 -434.56 2.66c10.82,-300.52 52.62,-1041.91 -27.14,-1291.72l-397.92 -2.9 -5.02 -854.51 -1690.14 -1.14 -31.11 417.97 -820.95 36.52c-79.75,122.69 -46.46,151.91 -47.72,386.56 -150.52,0.01 -276.96,-24.72 -393.02,38.77l-37.06 392.7c-167.64,1.14 -271.51,-18.85 -389.9,34.16 -50.6,41.92 -24.84,-11.62 -40.69,95.53l-16.3 1172.89 -397.76 11.29 1.87 2541.92 390 28.34c65.04,393.44 -32.79,1059.13 51.95,1275.27 135.46,54.68 258.58,32.39 399.39,30.4l25.32 824.99c25.79,13.28 40.58,25.12 66.09,29.76l338.11 12.04 5.72 394.29 439.11 51.92 3.79 817.95 429.36 -2.12 1.82 429.12 425.81 0.81 1.64 428.57 429.38 -2.11 -1.96 431.61 430.68 0.32 -0.03 428.57 429.21 1.18 0.02 429.17 429.76 -2.04 -2.04 429.04 430.29 -0.04 0.13 430.02 819.85 2.27 48.07 441.82 394.2 4.69 26.57 371.86c1.31,-5.57 2.14,5.03 15.31,32.58l821.38 26.37 35.27 397c178.21,77.69 1003.73,21.29 1273.88,47.11l27.01 397.03 2544.04 0.68 11.76 -400.25c205.45,-16.73 1119.88,34.45 1269.94,-51.77 50.99,-120.69 31.45,-222.85 30.49,-390.56l396.32 -36.79z"/>
-                  </svg>
-                </div>
-                <div class="text">
-                  <p>Phone:</p>
-                  <p>+375(25)963-04-78</p>
-                </div>
-              </li>
-            </ul>
+        <div class="main-container-content">
+          <p>
+            <a href="https://rs.school/" target="_blank"> Rs Scooll </a>
+            <br>
+            <strong>«Js/Front-end Course 2024»</strong> с with coursework in:
+          </p>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main-container-title">
+          <h2 id="education">Education</h2>
+        </div>
+        <div class="main-container-content">
+          <ul class="education">
+            <li>
+              Belarusian State Agricultural Academy — Faculty of Economics,
+              major in Economic Cybernetics
+            </li>
+            <li>
+              Belarusian National Technical University — Faculty of
+              Instrumentation Engineering, major in Metrology, Standardization
+              and Certification
+            </li>
+            <li>
+              Belarusian National Technical University — Master’s Degree in
+              Quality Management
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main-container-title">
+          <h2 id="language">Language</h2>
+        </div>
+        <div class="main-container-content">
+          <ul class="education">
+            <li class="education-list">
+              <div class="education-title">
+                <p>Belarusian</p>
+              </div>
+              <div class="stars">
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </li>
+            <li class="education-list">
+              <div class="education-title">
+                <p>Russian</p>
+              </div>
+              <div class="stars">
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star"></div>
+              </div>
+            </li>
+            <li class="education-list">
+              <div class="education-title">
+                <p>English</p>
+              </div>
+              <div class="stars">
+                <div class="star full"></div>
+                <div class="star full"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-container-end">
+        <p class="text-footer">
+          © <time datetime="2025">2025</time> Gerasimchyk Egor. All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="wraper">
+        <div class="contact-container contact-container--first">
+          <div class="title-blok">
+            <p>Contact me</p>
           </div>
 
-          <div class="contact-container">
-            <div class="title-blok">
-              <p>Pro Skills</p>
-            </div>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14000 14000"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path fill="#e68f44"
+                    d="M9510.92 10766.33l11.92 -621.08 1220.39 -0.27 6.92 624.54 -1239.23 -3.19zm-4991.36 0l-1246.28 3.12 23.38 -624.2 1228.58 -0.15 -5.68 621.23zm3745.13 -4365.31l1867.31 15.74 0 611.46 618.15 0 0.4 1877.07 -618.55 0 0 626.55 -1882.12 -14.96 -5.03 -611.59 -605.99 0 -2.61 -1877.07 611.63 0 16.81 -627.2zm-2495.83 15.74l-0.59 611.46 626.8 0 1.64 1877.07 -627.85 0 0 611.46c-242.51,43.68 -745.46,18.69 -1014.52,16.47 -1010.69,-8.34 -856.94,182.79 -854.03,-627.93l-624.46 0.01 -3.56 -1875.96 634.63 -9.17c-11.34,-95.04 -39.01,-521.12 14.72,-582.22 90.36,-102.73 1811.55,-27.62 1847.22,-21.19zm5593.9 -3118.19c203.15,-5.94 444.59,-37.29 633.48,24.33l0.88 570.96 -63.44 36.36 -568.27 0 -2.65 -631.65zm-8699.06 -4.03l5.76 635.68 -641.44 0 0 -637.49 635.68 1.81zm1855.86 7471.79l4991.36 0 3.21 625.02c197.65,-8.9 433.96,-36.82 614.76,23.23l27.91 596.44 2456.99 -1.38 -5.81 -622.21 622.4 -4.13 -2.22 -625.46 626.89 -9.18 -0.66 -4338.64 -624.28 4.43 -1.95 -1864.88 -620.44 -13.83 17.03 -1857.83c-202.6,9.63 -445.76,36.36 -634.64,-23.19l0.59 -594.96 -595.55 0c-44.79,-143.24 -39.03,-463.08 -23.19,-617.41l-2487.19 -17.22 9.19 636.93c259.17,-30.92 654.52,-5.66 940.36,-10.38 369.8,-6.11 297.9,-72.39 297.63,622.86l1248.58 -3.02 -17.77 627.05 -1856.25 7.64 -6.84 -622.87 -4969.49 2.62 -5.77 620.24 -1860.71 -11.66 5.11 -619.63 1238.11 -11.46c-80.51,-748.26 52.78,-615.68 289.24,-611.77 315.99,5.21 632.34,1.95 948.42,1.95l0 -612.65 -2486.06 0.91c14.2,196.53 38.36,434.45 -23.77,617.87l-594.39 0 0 594.96c-183.9,60 -420.21,32.08 -617.87,23.19l0 1869.48 -628.22 -5.23 0 1871.84 -618.15 -7.6 0.65 4350.3 618.39 0.01 -7.29 629.66 637.11 11.42 -19.25 611.23 2490.32 8.94 2.31 -627.38 617.69 0.77 3.51 -625.02z" />
+                </svg>
+              </div>
+              <div class="text">
+                <p>Diccord:</p>
+                <p>Yahor Herasimchyk</p>
+                <p>@ForestDeerr</p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1.1" viewBox="0 0 14000 14000"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="_2390871654960">
+                    <path fill="#e68f44"
+                      d="M11790.89 3536.51l968.61 -2.32 -1.61 6760.7 -949.42 7.55 -19.18 942.9c-1259.29,1.26 -9069.31,101 -9639.9,-47.6l-7.93 -908.76 -953.96 -11.48 0.19 -6713.79 957.39 -33.34 2.25 926.19 947.97 61.45 37.65 916.43 950.49 23.61 -11.56 -916.73 -957.12 -45.85 -2.71 -891.25 -941.3 -86.43 -20.86 -234.43 -0.15 -708.01 9643.82 -0.42 -2.67 961.58zm-10641.57 -963.07l-932.75 6.22 3.01 8665.19 921.84 16.78 52.18 921.08 11570.7 37.87 11.94 -938.13 946.41 -28.53 3.2 -8684.94 -930.84 -9.5 -38.87 -950.41 -11463.67 2.59 -143.15 961.78z" />
+                    <path fill="#e68f44"
+                      d="M9866.84 5549.67l-969.86 60.57 -11.75 903.07 -927.68 35.63c-11.56,102.15 -27.27,403.9 -40.16,464.85l-173.86 473.81 -1729.52 -17.39 -68.16 -947.51 -903.99 -5.04 -39.98 -946.4 -926.34 -21.97 34.22 955.94 899.29 50.61 81.4 933.4 897.74 6.83 40.39 959.79 1880.83 -27.46 20.18 -926.46 948.93 -49.66 15.18 -923.52 937.29 -19.68 35.85 -959.41z" />
+                    <polygon fill="#e68f44"
+                      points="9859.9,5555.27 10821.52,5558.78 10820.99,4591.51 9853.57,4587.24 " />
+                    <polygon fill="#e68f44" points="10817.4,4552.76 11779.03,4556.27 11778.49,3589 10811.07,3584.73 " />
+                  </g>
+                </svg>
+              </div>
+              <div class="text">
+                <p>Mail:</p>
+                <p>Qwerti@gmail.com</p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="img">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" version="1.1"
+                  viewBox="0 0 14000 14000" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path fill="#e68f44"
+                    d="M12780.37 12779.85l40.18 -187.01c2.36,-59.38 -3.47,-145.38 -3.63,-207.67 168.71,0.43 269.76,18.9 390.53,-31.69 80.2,-143.39 29.43,-637.41 57.19,-841.6l394.54 -11.87 -0.37 -1690.51 -854.8 -21.33 -5.72 -397.3c-255.68,-78.64 -985.86,-35.52 -1291.31,-26.57l5.2 -432.5 -1290.5 -0.08 -0.15 430.23 -429.04 -1.35 -1.31 860.84 -425.94 -0.48 -1.3 429.76 -1717.66 -0.34 -2.16 -422.33 -426.63 -8.66 -1.36 -420.21 -426.87 -10.76 -0.64 -416.63 -427.57 -9.25 -1.87 -419.85 -434.01 -7.9 5.03 -432.84 -437.81 4.22 8.16 -434.72 -63.45 -0.67 -372.82 4.8 -7.56 -435.16 -416.37 -2.63 -12.43 -426.04 -416.07 -1.83 -10.4 -425.42 -421.08 -1.99 -8.16 -426.02 -422.56 -1.94 -0.57 -1718.29 430.3 2.87 0.5 -429.88 857.26 1.37 1.56 -431.49 427.27 0.88 4.18 -1289.96 -434.56 2.66c10.82,-300.52 52.62,-1041.91 -27.14,-1291.72l-397.92 -2.9 -5.02 -854.51 -1690.14 -1.14 -31.11 417.97 -820.95 36.52c-79.75,122.69 -46.46,151.91 -47.72,386.56 -150.52,0.01 -276.96,-24.72 -393.02,38.77l-37.06 392.7c-167.64,1.14 -271.51,-18.85 -389.9,34.16 -50.6,41.92 -24.84,-11.62 -40.69,95.53l-16.3 1172.89 -397.76 11.29 1.87 2541.92 390 28.34c65.04,393.44 -32.79,1059.13 51.95,1275.27 135.46,54.68 258.58,32.39 399.39,30.4l25.32 824.99c25.79,13.28 40.58,25.12 66.09,29.76l338.11 12.04 5.72 394.29 439.11 51.92 3.79 817.95 429.36 -2.12 1.82 429.12 425.81 0.81 1.64 428.57 429.38 -2.11 -1.96 431.61 430.68 0.32 -0.03 428.57 429.21 1.18 0.02 429.17 429.76 -2.04 -2.04 429.04 430.29 -0.04 0.13 430.02 819.85 2.27 48.07 441.82 394.2 4.69 26.57 371.86c1.31,-5.57 2.14,5.03 15.31,32.58l821.38 26.37 35.27 397c178.21,77.69 1003.73,21.29 1273.88,47.11l27.01 397.03 2544.04 0.68 11.76 -400.25c205.45,-16.73 1119.88,34.45 1269.94,-51.77 50.99,-120.69 31.45,-222.85 30.49,-390.56l396.32 -36.79z" />
+                </svg>
+              </div>
+              <div class="text">
+                <p>Phone:</p>
+                <p>+375(25)963-04-78</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-            <ul class="skills-list">
-              <li class="skills-item">
-                <div class="text">
-                  <p>java script</p>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress progress--80"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="text">
-                  <p>type script</p>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress progress--50"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="text">
-                  <p>html\css</p>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress progress--90"></div>
-                </div>
-              </li>
-              <li class="skills-item">
-                <div class="text">
-                  <p>react</p>
-                </div>
-                <div class="progress-bar">
-                  <div class="progress progress--20"></div>
-                </div>
-              </li>
-            </ul>
+        <div class="contact-container">
+          <div class="title-blok">
+            <p>Pro Skills</p>
+          </div>
+
+          <ul class="skills-list">
+            <li class="skills-item">
+              <div class="text">
+                <p>java script</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress progress--80"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="text">
+                <p>type script</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress progress--50"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="text">
+                <p>html\css</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress progress--90"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="text">
+                <p>react</p>
+              </div>
+              <div class="progress-bar">
+                <div class="progress progress--20"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-icon">
+            <a href="https://github.com/ForestDeerr" target="_blank">
+              <svg height="50" width="50" viewBox="0 0 24 24" version="1.1" aria-hidden="true">
+                <path
+                  d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                </path>
+              </svg>
+              <span class="sr-only">RS School website</span>
+            </a>
+          </div>
+
+          <div class="footer-icon">
+            <a href="https://rs.school/" target="_blank">
+              <img class="rss-logo" src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg" alt="RS School">
+              <span class="sr-only">RS School website</span>
+            </a>
           </div>
         </div>
 
-        <footer>
-          <div class="footer-container">
-            <div class="footer-icon">
-              <a href="https://github.com/ForestDeerr" target="_blank">
-                <svg
-                  height="50"
-                  width="50"
-                  viewBox="0 0 24 24"
-                  version="1.1"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-
-            <div class="footer-icon">
-              <a href="https://rs.school/" target="_blank">
-                <img
-                  class="rss-logo"
-                  src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg"
-                  alt="RS School"
-                />
-              </a>
-            </div>
-          </div>
-
-          <!-- <p class="text-footer">
+        <!-- <p class="text-footer">
             © <time datetime="2025">2025</time> Gerasimchyk Egor. All rights reserved.
           </p> -->
-        </footer>
+      </footer>
+    </div>
+  </main>
+  <script type="module" src="./src/main.js"></script>
+</body>
 
-
-      </div>
-    </main>
-
-  </body>
 </html>
