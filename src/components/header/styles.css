@@ -181,7 +181,7 @@
 .logo-img {
   width: 175px;
   height: 175px;
-  border: 12px solid var(--bg-right);
+  border: 12px solid var(--bg-left);
   border-radius: 100px;
   position: absolute;
   right: 12%;
@@ -200,10 +200,72 @@
 .logo-characteristics {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 15px 10px 15px 10px;
   width: 30%;
   background-color: var(--accent);
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.characteristic-value {
+  color: var(--header-lvl);
+  margin-right: 16px;
+  text-shadow:
+    2px 0 var(--bg-right),
+    -2px 0 var(--bg-right),
+    0 2px var(--bg-right),
+    0 -2px var(--bg-right);
+  position: relative;
+  cursor: default;
+  transition:
+    opacity 0.25s steps(2),
+    filter 0.15s;
+}
+
+.characteristic-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.characteristic-image {
+  width: 20px;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 1000;
+  width: 100%x;
+  max-width: 210px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  background: var(--bg-left);
+  color: var(--text-primary);
+  border: 2px solid var(--accent);
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+  overflow-wrap: break-word;
+  text-shadow: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s steps(2),
+    filter 0.15s;
+}
+
+.tooltip-title {
+  color: var(--link);
+  text-transform: uppercase;
+}
+
+.characteristic-item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 992px) {

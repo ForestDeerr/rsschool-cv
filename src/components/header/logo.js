@@ -32,7 +32,7 @@ function createLogo(lang) {
   logoImg.append(img);
   logoTitle.append(h1, h2, createContacts(lang));
 
-  logoContainer.append(logoTitle, logoCharacteristics());
+  logoContainer.append(logoTitle, logoCharacteristics(lang));
   logo.append(logoContainer, logoImg);
   logoSection.append(logo);
 

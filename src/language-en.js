@@ -1,4 +1,5 @@
 import { aboutEn } from "./about.js";
+import { characteristicsContentEN } from "./components/header/characteristics-content.js";
 import { modalContentEN } from "./components/modal/about-content-en.js";
 import { sliderContentEN } from "./components/slider/slider-content-en.js";
 
@@ -109,6 +110,7 @@ const langEn = {
 
   modalContent: modalContentEN,
   sliderContent: sliderContentEN,
+  characteristicsContent: characteristicsContentEN,
 };
 
 export { langEn };

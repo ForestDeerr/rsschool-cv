@@ -1,7 +1,7 @@
 :root {
   --bg: #f3f5f7;
   --bg-left: #ffffff;
-  --bg-right: #2d3139;
+  --bg-right: #1b2029;
 
   --bg-lang-btn: #f3f5f7;
   --bc-lang-btn: #2d3139;
@@ -33,6 +33,7 @@
   --scroll-thumb-hover: #ffb15c;
 
   --header-height: 306px;
+  --header-lvl: #ddcb29;
 }
 
 [data-theme="dark"] {
@@ -70,6 +71,7 @@
   --scroll-thumb-hover: #ffb15c;
 
   --header-height: 306px;
+  --header-lvl: #ddcb29;
 }
 
 h1,

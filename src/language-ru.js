@@ -1,4 +1,5 @@
 import { aboutRu } from "./about.js";
+import { characteristicsContentRU } from "./components/header/characteristics-content.js";
 import { modalContentRU } from "./components/modal/about-content-ru.js";
 import { sliderContentRU } from "./components/slider/slider-content-ru.js";
 
@@ -110,6 +111,7 @@ const langRu = {
 
   modalContent: modalContentRU,
   sliderContent: sliderContentRU,
+  characteristicsContent: characteristicsContentRU,
 };
 
 export { langRu };
