@@ -182,3 +182,29 @@
   font-size: 10px;
   line-height: 1.5;
 }
+
+.info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: var(--accent);
+
+  transition:
+    all 0.2s steps(2),
+    filter 0.2s;
+}
+
+.info-btn:hover {
+  width: 30px;
+}
+
+.info-btn-text {
+  color: var(--bg);
+}
+
+.info-btn:hover .info-btn-text {
+  font-size: 20px;
+}
