@@ -1,6 +1,6 @@
 import { createLangBtn } from "../language-button/language-button.js";
 import { createModalBtn } from "../modal/modal-button.js";
-import { createThemBtn } from "../thema-button/thema-button.js";
+import { createThemBtn } from "../them-button/them-button.js";
 
 function createSettingButtons(lang) {
   const setting = document.createElement("div");

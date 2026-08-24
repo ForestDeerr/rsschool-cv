@@ -51,11 +51,9 @@
 }
 
 .setting {
-  position: absolute;
   display: flex;
   align-items: center;
   gap: 5px;
-
   transform: translateX(150%);
   transition: transform 0.3s steps(8);
 }
@@ -70,15 +68,6 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media (max-width: 1230px) {
-  .border-gearr {
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 15px;
-    gap: 20px;
   }
 }
 

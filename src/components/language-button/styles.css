@@ -52,14 +52,6 @@
   background-image: url("../language-button/images/EN.png");
 }
 
-.light {
-  background-image: url("../language-button/images/light.png");
-}
-
-.dark {
-  background-image: url("../language-button/images/dark.png");
-}
-
 .infoPng {
   background-image: url("../language-button/images/info.png");
 }

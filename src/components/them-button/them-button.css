@@ -1,0 +1,41 @@
+.them-btn {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  width: 9px;
+  height: 9px;
+  border: solid var(--accent) 1px;
+  border-radius: 6px;
+}
+
+.beam {
+  position: absolute;
+  width: 2px;
+
+  top: 27.5px;
+  border-radius: 3px;
+  background-color: var(--accent);
+  transform-origin: 50% -7px;
+  transition: height 0.3s steps(4);
+}
+
+.dark {
+  height: 2px;
+}
+
+.light {
+  height: 5px;
+}
+
+.them-btn:hover .dark {
+  height: 5px;
+}
+
+.them-btn:hover .light {
+  height: 2px;
+}
