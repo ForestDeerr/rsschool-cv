@@ -1,0 +1,30 @@
+.lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: var(--accent);
+  transition: transform 0.3s steps(5);
+}
+
+.lang-btn-front,
+.lang-btn-back {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  font-size: 10px;
+}
+
+.lang-btn-back {
+  transform: rotateY(180deg);
+}
+
+.lang-btn:hover {
+  transform: rotateY(180deg);
+}
