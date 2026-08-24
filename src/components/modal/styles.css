@@ -197,14 +197,32 @@
     filter 0.2s;
 }
 
-.info-btn:hover {
-  width: 30px;
-}
-
 .info-btn-text {
   color: var(--bg);
 }
 
 .info-btn:hover .info-btn-text {
-  font-size: 20px;
+  animation: textPulse 1.5s steps(3) infinite;
+}
+
+@keyframes textPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.15);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  75% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

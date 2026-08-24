@@ -13,7 +13,7 @@
 }
 
 .border-gear.open {
-  width: 220px;
+  width: 150px;
 }
 
 .gear-btn {
@@ -73,6 +73,6 @@
 
 @media (max-width: 992px) {
   .border-gear.open {
-    width: 170px;
+    width: 125px;
   }
 }
