@@ -19,6 +19,7 @@
   justify-content: center;
   backface-visibility: hidden;
   font-size: 10px;
+  color: var(--bg);
 }
 
 .lang-btn-back {
