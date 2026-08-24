@@ -284,3 +284,19 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 870px) {
+  .logo-title {
+    align-items: flex-start;
+  }
+
+  .logo-img {
+    width: 125px;
+    height: 125px;
+    right: 18%;
+  }
+
+  .logo-characteristics {
+    padding: 15px 0px 15px 10px;
+  }
+}

@@ -182,3 +182,47 @@
   font-size: 10px;
   line-height: 1.5;
 }
+
+.info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: var(--accent);
+
+  transition:
+    all 0.2s steps(2),
+    filter 0.2s;
+}
+
+.info-btn-text {
+  color: var(--bg);
+}
+
+.info-btn:hover .info-btn-text {
+  animation: textPulse 1.5s steps(3) infinite;
+}
+
+@keyframes textPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.15);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  75% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

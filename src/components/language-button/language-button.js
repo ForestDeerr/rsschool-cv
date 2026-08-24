@@ -2,29 +2,32 @@ import { startApp } from "../../main.js";
 import { createButton } from "../utils/create-button.js";
 import { loadStyle } from "../utils/load-style.js";
 
-function getNextLang(lang) {
-  return lang === "ru" ? "en" : "ru";
-}
-
 function createLangBtn() {
-  loadStyle("./src/components/language-button/styles.css");
+  loadStyle("./src/components/language-button/language-button.css");
 
-  let currentLang = localStorage.getItem("lang");
+  let currentLang = localStorage.getItem("lang") || "ru";
 
-  const button = createButton({
-    className: `lang-btn ${getNextLang(currentLang)}`,
-    onClick: () => {
-      currentLang = currentLang === "ru" ? "en" : "ru";
+  const langueBtn = document.createElement("button");
+  langueBtn.className = "lang-btn";
 
-      localStorage.setItem("lang", currentLang);
+  const front = document.createElement("span");
+  front.className = "lang-btn-front";
+  front.textContent = currentLang.toUpperCase();
 
-      button.className = `lang-btn ${getNextLang(currentLang)}`;
+  const back = document.createElement("span");
+  back.className = "lang-btn-back";
+  back.textContent = currentLang === "ru" ? "EN" : "RU";
 
-      startApp();
-    },
+  langueBtn.append(front, back);
+
+  langueBtn.addEventListener("click", () => {
+    currentLang = currentLang === "ru" ? "en" : "ru";
+
+    localStorage.setItem("lang", currentLang);
+
+    startApp();
   });
-
-  return button;
+  return langueBtn;
 }
 
 export { createLangBtn };

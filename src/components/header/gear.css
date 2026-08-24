@@ -1,0 +1,78 @@
+.border-gear {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 28px;
+  height: 25px;
+  margin-right: 10px;
+  border: 8px solid transparent;
+  border-image: url(../language-button/images/border.png) 8 fill;
+  transition: width 0.3s steps(4);
+  overflow: hidden;
+}
+
+.border-gear.open {
+  width: 150px;
+}
+
+.gear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+}
+
+.tooth-gear {
+  position: absolute;
+  background-color: var(--accent);
+  width: 5px;
+  height: 27px;
+}
+
+.body-gear {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--accent);
+}
+
+.hole-gear {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--bg);
+}
+
+.border-gear:hover .gear-btn {
+  animation: gear-rotate 2s steps(7) infinite;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transform: translateX(150%);
+  transition: transform 0.3s steps(8);
+}
+
+.setting.open-setting {
+  transform: translateX(-24%);
+}
+
+@keyframes gear-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .border-gear.open {
+    width: 125px;
+  }
+}

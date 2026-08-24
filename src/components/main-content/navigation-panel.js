@@ -1,6 +1,9 @@
 import { getNavigationLinks } from "../../constants.js";
+import { gearBtn } from "../header/gear-button.js";
+import { createSettingButtons } from "../header/setting-buttons.js";
 
 function createNavigation(lang, burgerBtn) {
+  const gear = gearBtn(createSettingButtons(lang));
   const links = getNavigationLinks(lang);
 
   const nav = document.createElement("nav");
@@ -19,7 +22,7 @@ function createNavigation(lang, burgerBtn) {
     ul.append(li);
   });
 
-  nav.append(ul, burgerBtn);
+  nav.append(ul, gear, burgerBtn);
 
   return nav;
 }
