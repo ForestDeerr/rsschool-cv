@@ -634,3 +634,9 @@ button {
     width: 100%;
   }
 }
+
+@media (max-width: 510px) {
+  h2 {
+    font-size: 13px;
+  }
+}
