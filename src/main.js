@@ -1,4 +1,5 @@
 import { createHeader } from "./components/header/header.js";
+import { updateLoader } from "./components/loader/loader.js";
 import { createFooter } from "./components/main-content/footer.js";
 import { createMain } from "./components/main-content/main-content.js";
 import { createModal } from "./components/modal/create-modal.js";
@@ -45,6 +46,12 @@ function startApp() {
   }
 }
 
-startApp();
+window.addEventListener("load", async () => {
+  await updateLoader("Loading fonts...");
+  await document.fonts.ready;
+  await updateLoader("Loading settings...");
+  await updateLoader("Ready!");
+  startApp();
+});
 
 export { startApp };

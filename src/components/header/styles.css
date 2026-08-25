@@ -18,9 +18,6 @@
   transform: translateX(0);
 }
 
-.mobile-navigation-panel {
-}
-
 .ul-mobile-menu {
   display: flex;
   padding: 0 10px;
