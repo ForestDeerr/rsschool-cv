@@ -1,0 +1,45 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+}
+
+.loader-container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.loader-text {
+  position: absolute;
+  top: 43px;
+  right: 53px;
+}
+
+.loader-gear .tooth-gear:nth-child(1) {
+  transform: rotate(0deg);
+}
+
+.loader-gear .tooth-gear:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.loader-gear .tooth-gear:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.loader-gear .tooth-gear:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+.loader-gear {
+  position: absolute;
+  top: 41px;
+  right: 25px;
+  display: flex;
+
+  animation: gear-rotate 2s steps(7) infinite;
+}

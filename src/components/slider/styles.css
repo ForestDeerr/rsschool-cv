@@ -1,0 +1,154 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.slider-window {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.slider-info {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: rgb(30 30 30 / 70%);
+  z-index: 9;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.35s steps(12);
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.slider-title {
+  margin: 0;
+}
+
+.slider-btn {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition:
+    transform 0.25s steps(2),
+    filter 0.15s;
+}
+
+.slider-btn:hover {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+.slider-btn-prev {
+  background-image: url(../language-button/images/left-small.png);
+}
+
+.slider-btn-next {
+  background-image: url(../language-button/images/right-small.png);
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 10px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 3px solid var(--accent);
+  cursor: pointer;
+  transition:
+    transform 0.15s steps(2),
+    filter 0.15s;
+}
+
+.dot:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+.active {
+  background-color: var(--accent);
+}
+
+.slider-title-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.navigation-bar {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 8px solid transparent;
+  border-image: url(../language-button/images/border.png) 8 fill;
+}
+
+.info-description {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-green);
+  font-family: Consolas, monospace;
+  padding-bottom: 10px;
+}
+
+.info {
+  font-family: Consolas, monospace;
+  color: var(--accent);
+}
+
+.info-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.link-btn {
+  height: 30px;
+  border: 8px solid transparent;
+  border-image: url(../language-button/images/border.png) 8 fill;
+  font-size: 10px;
+  transition:
+    transform 0.15s steps(2),
+    filter 0.15s;
+}
+
+.link-btn:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 4px var(--accent));
+}
+
+@media (max-width: 1200px) {
+  .info-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
